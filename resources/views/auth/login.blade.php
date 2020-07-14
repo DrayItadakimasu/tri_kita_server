@@ -10,7 +10,6 @@
                     @csrf
                     <div class="enter-container">
                         <div class="enter-img-cont text-center">
-                            <img src="/assets/img/logo-blue.png" alt="">
                         </div>
 
 

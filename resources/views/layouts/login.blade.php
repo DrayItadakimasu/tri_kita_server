@@ -14,11 +14,7 @@
 
 
 <style>
-    body {
-        background-image: url(/assets/img/enter.png);
-        background-size: cover;
-        background-position: top 15px center;
-    }
+
 </style>
 
 @include ("sections.js")
