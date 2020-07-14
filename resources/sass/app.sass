@@ -1,0 +1,367 @@
+// CUSTOM USER STYLES & IMPORTS
+@import '../../node_modules/bootstrap/scss/bootstrap'
+
+.header
+    background-image: url("/img/header-background.jpg")
+    background-repeat: no-repeat
+    background-position: top right
+    background-size: 50%
+    height: 596px
+
+h2
+    font-size: 1.5em
+
+.header-left
+    padding-top: 30px
+
+.header-link
+    font-size: 14px
+    color: #3e537c
+    margin-left: 20px
+
+.header-register
+    color: #ffffff
+
+.header-right-link
+    padding-top: 25px
+    float: right
+
+.user-login
+    border-radius: 50%
+    background-color: rgb(108, 150, 239)
+    width: 97px
+    height: 35px
+    background-image: url("/img/user-login.png")
+    border: none
+
+.devices
+    background-image: url("/img/devices.png")
+    background-repeat: no-repeat
+    background-position: bottom left
+    top: 130px
+    height: 385px
+
+.promo
+    width: 100%
+    color: #989898
+
+    h2
+        color: #3e537c
+        margin-top: 120px
+        margin-bottom: 30px
+
+    form input
+        width: 165px
+        margin-top: 60px
+
+.button-form
+    border-radius: 50%
+    background-color: rgb(137, 173, 248)
+    box-shadow: 8.776px 8.184px 29px 0px rgba(108, 150, 239, 0.52)
+    width: 56px
+    height: 56px
+    background-image: url("/img/paper-plane.png")
+    border: none
+
+.items
+    background-color: #6c96ef
+    margin-bottom: 95px
+    color: #ffffff
+
+.dropbtn
+    padding-top: 15px
+    color: white
+    border: none
+
+.items .col-4
+    padding-top: 30px
+
+.dropdown
+    border-right: #96b2ef 1px solid
+    position: relative
+    display: inline-block
+
+.images-item
+    p
+        position: absolute
+        bottom: 0
+        min-height: 135px
+        padding: 15px
+
+
+.dropdown-content
+    box-shadow: 1.672px 15.912px 27px 0px rgba(108, 150, 239, 0.33)
+    display: none
+    position: absolute
+    top: 137px
+    left: 0
+    background-image: url("/img/dropdown.png")
+    max-width: 373px
+    width: 100%
+    height: 412px
+    z-index: 1
+
+    p
+        position: absolute
+        bottom: 0
+        right: 80px
+
+    img
+        position: absolute
+        bottom: 15px
+        right: 15px
+
+    a
+        color: #ffffff
+        font-size: 14px
+        padding: 12px 16px
+        text-decoration: none
+        display: block
+
+        &:hover
+            background-color: #89adf8
+
+    ul
+        li
+            a
+                padding: 5px
+
+/*.dropdown-content a::after {
+/*    content: "";
+/*    border-radius: 50%;
+/*    background-color: rgb(255, 255, 255);
+/*    width: 7px;
+/*    height: 7px;
+/*}
+
+.dropdown:hover
+    .dropdown-content
+        display: block
+
+    background-color: #89adf8
+
+.reasons
+    color: #3e537c
+    font-size: 14px
+    margin-bottom: 118px
+
+    > .col-6 p
+        color: #989898
+
+    h2
+        color: #3e537c
+
+
+.advantages, .list-group-item
+    color: #3e537c
+
+.advantages
+    margin-bottom: 100px
+
+    h2
+        font-size: 18px
+
+    p
+        font-size: 14px
+        color: #8f8f8f
+
+.list-group-item
+    padding: 20px
+    border: none
+
+    &.active
+        background-color: rgb(247, 247, 247)
+        box-shadow: 4.213px 5.59px 27px 0px rgba(0, 0, 0, 0.05)
+        border: none
+        color: #3e537c
+
+.line-logo
+    background-color: #3e537c
+    /*background-image: url("img/logo-right.png");
+    /*background-position: right;
+    background-image: url("/img/logo-line-1.png")
+    background-repeat: no-repeat
+    height: auto
+
+@media(max-width: 1145px)
+    .line-logo
+        background-color: #3e537c
+
+.register-row
+//padding-left: 15px
+
+.register-col
+    border: #7c8aa6 1px solid
+    padding-top: 40px
+    padding-bottom: 40px
+    padding-left: 40px
+
+    &:hover
+        background-color: #485d86
+
+.register-link
+    font-size: 30px
+    color: #89adf8
+
+.feedback
+    color: #909090
+
+    h2
+        font-size: 16px
+        color: #485d86
+
+.images
+    flex-wrap: wrap
+    margin-bottom: 75px
+
+.feedback
+    margin-bottom: 60px
+
+.contacts
+    background: linear-gradient(to right, #89adf8 50%, #ffffff 50%)
+    color: #ffffff
+
+@media (max-width: 768px)
+    .contacts
+        background: #89adf8
+        color: #ffffff
+
+.footer-copy, .footer-dev
+    font-size: 12px
+    color: #9f9f9f
+
+.partners
+    img
+        width: 100%
+
+
+@media (max-width: 1145px)
+    .header
+        background-image: none
+    .header-link
+        color: #3e537c !important
+    .items
+        margin-top: 60px
+    .promo
+        h2
+            margin-top: 30px
+    .header
+        height: auto
+
+//OWNERS PAGE
+
+.owners
+    .header
+        background-image: url("/img/owner-back.png")
+        background-repeat: no-repeat
+        background-position: top center
+        background-size: cover
+
+    .owners
+        background: linear-gradient(to right, #3e537c 50%, #ffffff 50%)
+        z-index: -1
+
+    .header-link
+        color: #ffffff
+
+    .header-link-right
+        color: #3e537c!important
+
+    .promo
+        padding: 15px
+        padding-top: 0
+        img
+            position: absolute
+            right: -200px
+            z-index: -1
+
+    .advantages
+        padding: 15px
+
+    .button-promo
+        background-color: rgb(255, 255, 255)
+        width: 293px
+        height: 52px
+        border-radius: 50px
+        border: none
+
+    .items
+        height: 197px
+        .container
+            background-color: #6c96ef
+
+    .line-logo
+        height: 233px
+        background-image: url("/img/owner-line.png")
+        background-size: cover
+        margin-bottom: 50px
+
+
+    .dropdown-content
+        background-position: bottom
+        width: 100%
+        height: 220px
+        top: 151px
+        p
+            position: static
+        img
+            position: static
+
+    .dropdown-item
+        height: 100px
+        display: flex
+
+    .navbar-toggler
+        background-color: #ffffff
+
+    .navbar
+        li:nth-child(2)
+            margin-right: 50px
+
+    @media (max-width: 1500px)
+        .promo
+            .img
+                position: static
+                width: 100%
+                width: 100%
+
+    @media (max-width: 1145px)
+        .items
+            margin-top: 0
+    @media (max-width: 768px)
+        .header
+            background-color: #3e537c
+            background-image: none
+    @media (min-width: 320px) and (max-width: 768px)
+        .advantages
+            margin-top: 200px
+    @media (max-width: 992px)
+        .header-link
+            color: white!important
+    @media (max-width: 767px)
+        .dropdown-content
+            top: 118px
+
+//DRIVERS PAGE
+.drivers
+    .button-promo
+        background-image: url("/img/truck-button.png")
+        background-color: white
+        width: 293px
+        height: 52px
+        border: none
+
+    .header
+        background-image: url("/img/dlya-perevozchikov.jpg")
+        background-repeat: no-repeat
+        background-position: top center
+        background-size: cover
+
+    .button-promo-line
+        background-image: url("/img/button-register.png")
+
+    @media (max-width: 768px)
+        .header
+            background-color: #3e537c
+            background-image: none
+

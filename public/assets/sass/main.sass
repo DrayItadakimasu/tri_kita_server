@@ -1,0 +1,1186 @@
+// CUSTOM USER STYLES & IMPORTS
+@import '../../../node_modules/bootstrap/scss/bootstrap'
+
+.header
+    background-image: url("/img/header-background.jpg")
+    background-repeat: no-repeat
+    background-position: top right
+    background-size: 50%
+    height: 596px
+
+h2
+    font-size: 1.5em
+
+.header-left
+    padding-top: 30px
+
+.header-link
+    font-size: 14px
+    color: #3e537c
+    margin-left: 20px
+
+.header-register
+    color: #ffffff
+
+.header-right-link
+    padding-top: 25px
+    float: right
+
+.user-login
+    border-radius: 50%
+    background-color: rgb(108, 150, 239)
+    width: 97px
+    height: 35px
+    background-image: url("/img/user-login.png")
+    border: none
+
+.devices
+    background-image: url("/img/devices.png")
+    background-repeat: no-repeat
+    background-position: bottom left
+    top: 130px
+    height: 385px
+
+.promo
+    width: 100%
+    color: #989898
+
+    h2
+        color: #3e537c
+        margin-top: 120px
+        margin-bottom: 30px
+
+    form input
+        width: 165px
+        margin-top: 60px
+
+.button-form
+    border-radius: 50%
+    background-color: rgb(137, 173, 248)
+    box-shadow: 8.776px 8.184px 29px 0px rgba(108, 150, 239, 0.52)
+    width: 56px
+    height: 56px
+    background-image: url("/img/paper-plane.png")
+    border: none
+
+.items
+    background-color: #6c96ef
+    margin-bottom: 95px
+    color: #ffffff
+
+.dropbtn
+    padding-top: 15px
+    color: white
+    border: none
+
+.items .col-4
+    padding-top: 30px
+
+.dropdown
+    border-right: #96b2ef 1px solid
+    position: relative
+    display: inline-block
+
+.images-item
+    p
+        position: absolute
+        bottom: 0
+        min-height: 135px
+        padding: 15px
+
+
+.dropdown-content
+    box-shadow: 1.672px 15.912px 27px 0px rgba(108, 150, 239, 0.33)
+    display: none
+    position: absolute
+    top: 137px
+    left: 0
+    background-image: url("/img/dropdown.png")
+    max-width: 373px
+    width: 100%
+    height: 412px
+    z-index: 1
+
+    p
+        position: absolute
+        bottom: 0
+        right: 80px
+
+    img
+        position: absolute
+        bottom: 15px
+        right: 15px
+
+    a
+        color: #ffffff
+        font-size: 14px
+        padding: 12px 16px
+        text-decoration: none
+        display: block
+
+        &:hover
+            background-color: #89adf8
+
+    ul
+        li
+            a
+                padding: 5px
+
+/*.dropdown-content a::after {
+/*    content: "";
+/*    border-radius: 50%;
+/*    background-color: rgb(255, 255, 255);
+/*    width: 7px;
+/*    height: 7px;
+/*}
+
+.dropdown:hover
+    .dropdown-content
+        display: block
+
+    background-color: #89adf8
+
+.reasons
+    color: #3e537c
+    font-size: 14px
+    margin-bottom: 118px
+
+    > .col-6 p
+        color: #989898
+
+    h2
+        color: #3e537c
+
+
+.advantages, .list-group-item
+    color: #3e537c
+
+.advantages
+    margin-bottom: 100px
+
+    h2
+        font-size: 18px
+
+    p
+        font-size: 14px
+        color: #8f8f8f
+
+.list-group-item
+    padding: 20px
+    border: none
+
+    &.active
+        background-color: rgb(247, 247, 247)
+        box-shadow: 4.213px 5.59px 27px 0px rgba(0, 0, 0, 0.05)
+        border: none
+        color: #3e537c
+
+.line-logo
+    background-color: #3e537c
+    /*background-image: url("img/logo-right.png");
+    /*background-position: right;
+    background-image: url("/img/logo-line-1.png")
+    background-repeat: no-repeat
+    height: auto
+
+@media(max-width: 1145px)
+    .line-logo
+        background-color: #3e537c
+
+.register-row
+//padding-left: 15px
+
+.register-col
+    border: #7c8aa6 1px solid
+    padding-top: 40px
+    padding-bottom: 40px
+    padding-left: 40px
+
+    &:hover
+        background-color: #485d86
+
+.register-link
+    font-size: 30px
+    color: #89adf8
+
+.feedback
+    color: #909090
+
+    h2
+        font-size: 16px
+        color: #485d86
+
+.images
+    flex-wrap: wrap
+    margin-bottom: 75px
+
+.feedback
+    margin-bottom: 60px
+
+.contacts
+    background: linear-gradient(to right, #89adf8 50%, #ffffff 50%)
+    color: #ffffff
+
+@media (max-width: 768px)
+    .contacts
+        background: #89adf8
+        color: #ffffff
+
+.footer-copy, .footer-dev
+    font-size: 12px
+    color: #9f9f9f
+
+.partners
+    img
+        width: 100%
+
+
+@media (max-width: 1145px)
+    .header
+        background-image: none
+    .header-link
+        color: #3e537c !important
+    .items
+        margin-top: 60px
+    .promo
+        h2
+            margin-top: 30px
+    .header
+        height: auto
+
+//OWNERS PAGE
+
+.owners
+    .header
+        background-image: url("/img/owner-back.png")
+        background-repeat: no-repeat
+        background-position: top center
+        background-size: cover
+
+    .owners
+        background: linear-gradient(to right, #3e537c 50%, #ffffff 50%)
+        z-index: -1
+
+    .header-link
+        color: #ffffff
+
+    .header-link-right
+        color: #3e537c !important
+
+    .promo
+        padding: 15px
+        padding-top: 0
+
+        img
+            position: absolute
+            right: -200px
+            z-index: -1
+
+    .advantages
+        padding: 15px
+
+    .button-promo
+        background-color: rgb(255, 255, 255)
+        width: 293px
+        height: 52px
+        border-radius: 50px
+        border: none
+
+    .items
+        height: 197px
+
+        .container
+            background-color: #6c96ef
+
+    .line-logo
+        height: 233px
+        background-image: url("/img/owner-line.png")
+        background-size: cover
+        margin-bottom: 50px
+
+
+    .dropdown-content
+        background-position: bottom
+        width: 100%
+        height: 220px
+        top: 151px
+
+        p
+            position: static
+
+        img
+            position: static
+
+    .dropdown-item
+        height: 100px
+        display: flex
+
+    .navbar-toggler
+        background-color: #ffffff
+
+    .navbar
+        li:nth-child(2)
+            margin-right: 50px
+
+    @media (max-width: 1500px)
+        .promo
+            .img
+                position: static
+                width: 100%
+                width: 100%
+
+    @media (max-width: 1145px)
+        .items
+            margin-top: 0
+    @media (max-width: 768px)
+        .header
+            background-color: #3e537c
+            background-image: none
+    @media (min-width: 320px) and (max-width: 768px)
+        .advantages
+            margin-top: 200px
+    @media (max-width: 992px)
+        .header-link
+            color: white !important
+    @media (max-width: 767px)
+        .dropdown-content
+            top: 118px
+
+//DRIVERS PAGE
+.drivers
+    .button-promo
+        background-image: url("/img/truck-button.png")
+        background-color: white
+        width: 293px
+        height: 52px
+        border: none
+
+    .header
+        background-image: url("/img/dlya-perevozchikov.jpg")
+        background-repeat: no-repeat
+        background-position: top center
+        background-size: cover
+
+    .button-promo-line
+        background-image: url("/img/button-register.png")
+
+    @media (max-width: 768px)
+        .header
+            background-color: #3e537c
+            background-image: none
+
+.lk
+    background-color: #f0f3f8
+
+    .lk-user-col
+        background-color: #3d537c
+        padding: 15px
+        padding-left: 0px
+
+    .logo-header
+        padding-left: 15px
+
+    .user-avatar
+        background-color: #f3f5f9
+        display: flex
+        justify-content: center
+        margin-left: auto
+        margin-right: auto
+        border-radius: 50%
+        width: 127px
+        height: 127px
+        padding-left: 15px
+
+    .rating-star
+        background: url(../img/empty_star.svg)
+        width: 12px
+        height: 12px
+        margin-right: 6px
+
+    .rating-output
+        height: 20px
+        display: flex
+        justify-content: center
+
+    .full-star
+        background: url(../img/full_star.svg)
+
+    .half-star
+        background: url(../img/half_star.svg)
+
+    .empty-star
+        background: url(../img/empty_star.svg)
+
+    .filter
+        background-color: white
+
+    .stats
+        background-color: white
+
+    .filter-panel-cost, .filter-panel-buttons
+        width: auto
+        display: flex
+
+    .filter-form
+        height: 78px
+        background: #fff
+
+        select
+            width: 260px
+            appearance: none
+            background-color: #f4f4f4
+            background-image: url(../img/arrow-down.png)
+            background-repeat: no-repeat
+            background-position: 90% center
+            border: 0px
+            outline: 0px
+            padding: 10px
+            padding-top: 17px
+            padding-left: 25px
+            border-radius: 5px
+            font-size: 14px
+            cursor: pointer
+            max-height: 44px
+            letter-spacing: 0.4px
+
+        p
+            margin-left: 2px
+            margin-right: 10px
+
+        .count1
+            margin-right: 9px
+
+        .count2
+            margin-right: 18px
+
+
+        option
+            background: #fff
+            color: #000
+
+        input[type='text'], input[type='number']
+            width: 85px
+            background-color: #f4f4f4
+            border: 0px
+            border-radius: 5px
+            padding: 10px
+            padding-left: 15px
+            max-height: 44px
+
+        p
+            margin-top: 10px
+
+        .filter-select1
+            margin-right: 13px
+
+        .filter-select2
+            margin-right: 16px
+            padding-left: 30px
+
+        .filter-select3
+            margin-right: 16px
+            padding-left: 32px
+
+        form
+            padding-left: 7px
+            padding-right: 7px
+
+    .select2-dropdown
+        background-color: #f4f4f4
+        border: none
+        top: -9px
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
+
+    .select2-container
+        margin-left: 60px
+
+    .filter-select3
+        margin-top: 10px
+        margin-left: 50px
+
+    .select2-container--default .select2-selection--single
+        background-color: #f4f4f4
+        border: none
+        border-radius: 4px
+        height: 42px
+        padding: 8px 12px
+
+    .select2-container--default .select2-selection--single .select2-selection__arrow
+        top: 8px
+
+    .filter-panel-cost, .filter-panel-buttons
+        width: auto
+        display: flex
+
+    .stats
+        border-radius: 15px
+        padding: 20px
+        color: #cacaca
+        font-size: 14px
+        margin-bottom: 25px
+
+        span
+            font-size: 35px
+            color: #3d537c
+            font-weight: bold
+
+        .drivers
+            font-size: 35px
+            background: linear-gradient(to right, #5b9dff 33%, #1166e4 66%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            color: #0B2349
+
+        .owners
+            font-size: 35px
+            background: linear-gradient(to right, #90c57b 33%, #64a54a 66%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            color: #0B2349
+
+    .filter
+        border-radius: 15px
+        background-color: white
+        font-size: 14px
+        margin-top: 30px
+        margin-bottom: 25px
+
+        p
+            padding: 20px
+            color: #cacaca
+
+        .icon::before
+            background-image: url("/img/document-active.png")
+            content: ""
+            width: 24px
+            height: 28px
+            background-repeat: no-repeat
+            position: absolute
+            top: -15px
+            right: -40px
+
+        .list-group-item-action:focus
+            background-image: url("/img/bg-ul 14.png")
+            outline: none
+            border: none
+
+            .icon::before
+                background-image: url("/img/document-active.png")
+
+    .lk-user-col
+        .list-group
+            padding: 0
+
+        .list-group-item
+            background-color: #3d537c
+            color: #9ea9be !important
+
+        .list-group-item:focus, .active
+            background-image: url("/img/bg-ul 14.png")
+            background-repeat: no-repeat
+            left: 0
+            color: #ffffff !important
+            border: none
+            outline: none
+
+    .middle-block
+        padding-top: 30px
+
+    .user-name
+        padding-top: 8px
+        font-size: 18px
+        color: white
+
+    .user-menu
+        padding-top: 15px
+        padding-left: 15px
+
+    .user-info
+        position: absolute
+        right: 0
+
+    .header-user
+        background-color: #3d537c
+        padding: 15px
+
+    .dropdown-toggle::after
+        display: none
+        outline: none
+
+    .dropdown-menu
+        left: auto
+        right: 50px
+
+    .table-container
+        border-radius: 15px
+        background-color: white
+        margin-top: 25px
+
+    .select2-container--default .select2-selection--single
+        background-color: white
+        border-bottom: 1px #f1f2f4 solid
+        font-size: 12px !important
+        padding-top: 15px
+        margin-top: 10px
+
+    .filter-form select
+        background-color: white
+        border-bottom: 1px #f1f2f4 solid
+        font-size: 12px !important
+        padding-top: 15px
+        margin-top: 10px
+
+    .trash-but
+        font-size: 12px
+        color: #92beff !important
+
+        img
+            margin-right: 10px
+
+    .filter1-submit
+        padding-top: 15px
+        margin-top: 10px
+        margin-left: 70px
+
+    .search
+        width: 78px
+        height: 78px
+        border-radius: 50%
+        background-image: url("/img/search.png")
+        border: none
+        position: absolute
+        right: 15px
+        z-index: 1
+
+    .search-box
+        height: 78px
+        background: linear-gradient(to right, #ffffff 50%, #3d537c 50%)
+
+    .select2-container--default
+        .select2-selection--single
+            .select2-selection__arrow
+                top: 25px
+
+    .filter
+        .list-group-item:nth-child(1)::before
+            content: ''
+            width: 24px
+            height: 28px
+            background-image: url("/img/document (1)2.png")
+            background-size: cover
+            display: inline-block
+            vertical-align: middle
+            margin-left: 20px
+            margin-right: 35px
+
+        .list-group-item:focus
+            &:nth-child(1)::before
+                background-image: url("/img/document (1).png")
+
+        .list-group-item:nth-child(2)::before
+            content: ''
+            width: 27px
+            height: 27px
+            background-image: url("/img/time.png")
+            background-size: cover
+            display: inline-block
+            vertical-align: middle
+            margin-left: 20px
+            margin-right: 35px
+
+        .list-group-item:focus
+            &:nth-child(2)::before
+                background-image: url("/img/time2.png")
+
+        .list-group-item:nth-child(3)::before
+            content: ''
+            width: 30px
+            height: 30px
+            background-image: url("/img/chat.png")
+            background-size: cover
+            display: inline-block
+            vertical-align: middle
+            margin-left: 20px
+            margin-right: 35px
+
+        .list-group-item:focus
+            &:nth-child(3)::before
+                background-image: url("/img/chat2.png")
+
+        .list-group-item:nth-child(4)::before
+            content: ''
+            width: 27px
+            height: 25px
+            background-image: url("/img/portfolio.png")
+            background-size: cover
+            display: inline-block
+            vertical-align: middle
+            margin-left: 20px
+            margin-right: 35px
+
+        .list-group-item:focus
+            &:nth-child(4)::before
+                background-image: url("/img/portfolio2.png")
+
+        .list-group-item:nth-child(5)::before
+            content: ''
+            width: 25px
+            height: 25px
+            background-image: url("/img/files-and-folders.png")
+            background-size: cover
+            display: inline-block
+            vertical-align: middle
+            margin-left: 20px
+            margin-right: 35px
+
+        .list-group-item:focus
+            &:nth-child(5)::before
+                background-image: url("/img/files-and-folders2.png")
+
+    .lk-user-col
+        .lk-link::before
+            content: ''
+            width: 24px
+            height: 26px
+            background-image: url("/img/document2.png")
+            background-size: cover
+            display: inline-block
+            vertical-align: middle
+            margin-left: 20px
+            margin-right: 35px
+
+        .list-group-item:focus, .active
+            &.lk-link::before
+                background-image: url("/img/document.png")
+
+        .myapp-link::before
+            content: ''
+            width: 24px
+            height: 26px
+            background-image: url("/img/list.png")
+            background-size: cover
+            display: inline-block
+            vertical-align: middle
+            margin-left: 20px
+            margin-right: 35px
+
+        .list-group-item:focus, .active
+            &.myapp-link::before
+                background-image: url("/img/list2.png")
+
+        .createapp-link::before
+            content: ''
+            width: 26px
+            height: 24px
+            background-image: url("/img/pen.png")
+            background-size: cover
+            display: inline-block
+            vertical-align: middle
+            margin-left: 20px
+            margin-right: 35px
+
+        .list-group-item:focus, .active
+            &.createapp-link::before
+                background-image: url("/img/pen2.png")
+
+        .list-group-item:nth-child(4)::before
+            content: ''
+            width: 25px
+            height: 25px
+            background-image: url("/img/question.png")
+            background-size: cover
+            display: inline-block
+            vertical-align: middle
+            margin-left: 20px
+            margin-right: 35px
+
+        .list-group-item:focus
+            &:nth-child(4)::before
+                background-image: url("/img/question2.png")
+
+        .list-group-item:nth-child(5)::before
+            content: ''
+            width: 25px
+            height: 25px
+            background-image: url("/img/businessman.png")
+            background-size: cover
+            display: inline-block
+            vertical-align: middle
+            margin-left: 20px
+            margin-right: 35px
+
+        .list-group-item:focus
+            &:nth-child(5)::before
+                background-image: url("/img/businessman2.png")
+
+        .list-group-item:nth-child(6)::before
+            content: ''
+            width: 25px
+            height: 25px
+            background-image: url("/img/wrench.png")
+            background-size: cover
+            display: inline-block
+            vertical-align: middle
+            margin-left: 20px
+            margin-right: 35px
+
+        .list-group-item:focus
+            &:nth-child(6)::before
+                background-image: url("/img/wrench2.png")
+
+        .list-group-item:nth-child(7)::before
+            content: ''
+            width: 23px
+            height: 19px
+            background-image: url("/img/sign-out-option.png")
+            background-size: cover
+            display: inline-block
+            vertical-align: middle
+            margin-left: 20px
+            margin-right: 35px
+
+        .list-group-item:focus
+            &:nth-child(7)::before
+                background-image: url("/img/sign-out-option.png")
+
+    .filter-inline
+        display: none
+
+    .stats-inline
+        display: none
+
+    .show-map
+        width: 100%
+        border-radius: 15px
+        text-align: center
+        border: none
+        background-color: white
+        display: none
+
+    .hide
+        height: 0 !important
+        transition: .5s
+
+    .fix-thead
+        width: 65%
+        position: fixed
+        top: 0
+        background-color: white
+        z-index: 1
+
+    .inputs
+        display: flex
+        width: 90%
+        justify-content: space-around
+        padding-left: 15px
+
+    .lk-user-col
+        position: fixed
+        width: 16.666667%
+        height: 100vh
+    .lk-user-col-exit
+        position: absolute
+        bottom: 100px
+
+    .right-fixed
+        position: fixed
+
+    .list-group
+        a
+            text-decoration: none
+            color: inherit
+
+    @media(max-width: 1815px)
+        .lk-user-col
+            position: fixed
+            width: 16.666667%
+            height: 100vh
+            padding-right: 0
+
+            .list-group-item:nth-child(n)
+                padding: 15px
+                padding-right: 5px
+
+        .fix-thead
+            width: 81.2%
+        .stats
+            padding: 15px
+        .stats-inline
+            display: block
+        .right-col
+            display: none
+        .middle-block
+            width: 88%
+        .filter-inline
+            display: none
+            background-color: white
+            padding: 15px
+            border-radius: 15px
+            margin-bottom: 15px
+
+            .list-inline-item:nth-child(2)::before
+                content: ''
+                width: 24px
+                height: 28px
+                background-image: url("/img/document (1)2.png")
+                background-size: cover
+                display: inline-block
+                vertical-align: middle
+                margin-left: 20px
+                margin-right: 35px
+
+            .list-inline-item:focus
+                &:nth-child(2)::before
+                    background-image: url("/img/document (1).png")
+
+            .list-inline-item:nth-child(3)::before
+                content: ''
+                width: 27px
+                height: 27px
+                background-image: url("/img/time.png")
+                background-size: cover
+                display: inline-block
+                vertical-align: middle
+                margin-left: 20px
+                margin-right: 35px
+
+            .list-inline-item:focus
+                &:nth-child(3)::before
+                    background-image: url("/img/time2.png")
+
+            .list-inline-item:nth-child(4)::before
+                content: ''
+                width: 30px
+                height: 30px
+                background-image: url("/img/chat.png")
+                background-size: cover
+                display: inline-block
+                vertical-align: middle
+                margin-left: 20px
+                margin-right: 35px
+
+            .list-inline-item:focus
+                &:nth-child(4)::before
+                    background-image: url("/img/chat2.png")
+
+            .list-inline-item:nth-child(5)::before
+                content: ''
+                width: 27px
+                height: 25px
+                background-image: url("/img/portfolio.png")
+                background-size: cover
+                display: inline-block
+                vertical-align: middle
+                margin-left: 20px
+                margin-right: 35px
+
+            .list-inline-item:focus
+                &:nth-child(5)::before
+                    background-image: url("/img/portfolio2.png")
+
+            .list-inline-item:nth-child(6)::before
+                content: ''
+                width: 25px
+                height: 25px
+                background-image: url("/img/files-and-folders.png")
+                background-size: cover
+                display: inline-block
+                vertical-align: middle
+                margin-left: 20px
+                margin-right: 35px
+
+            .list-inline-item:focus
+                &:nth-child(6)::before
+                    background-image: url("/img/files-and-folders2.png")
+        .filter-inline
+            display: block
+        .select2
+            margin-left: 15px
+        .filter-form
+            select
+                width: 143px !important
+
+            .filter-select3
+                width: 180px !important
+                margin-right: 0
+                margin-left: 0
+
+            .select2-container
+                margin-left: 0
+
+            .filter1-submit
+                margin-left: 0
+        .search
+            right: 0
+    @media (max-width: 1365px)
+        .search
+            right: -5px
+        .lk-user-col
+            .list-group-item:nth-child(n)::before
+                margin-left: 5px
+                margin-right: 5px
+
+            .list-group-item
+                padding: 15px
+
+        .list-inline-item:nth-child(n)::before
+            margin-right: 5px !important
+
+    .custom-width-doit
+        padding-top: 20px
+
+    .my-btn
+        border-radius: 50%
+        background-color: white
+        width: 45px
+        height: 45px
+        border: 1px solid #f1f4f8
+
+    .my-btn-edit
+        background-image: url("/img/checkbox-pen-outline.png")
+        width: 45px
+        height: 45px
+        border-color: #f1f4f8
+        background-repeat: no-repeat
+        background-position: center
+
+    .my-btn-del
+        background-image: url("/img/trash.png")
+        width: 45px
+        height: 45px
+        background-repeat: no-repeat
+        background-position: center
+
+    .my-btn-archive
+        background-image: url("/img/files-and-folders.png")
+        width: 45px
+        height: 45px
+        background-repeat: no-repeat
+        background-position: center
+
+    .form-card
+        font-size: 12px
+        background-color: white
+        border-radius: 15px
+        padding: 15px
+
+    .load-form
+        padding: 25px
+
+        .row
+            border-radius: 15px
+            background-color: #f6f8fb
+
+            h2
+                padding-top: 25px
+
+    .unload-form
+        padding: 25px
+
+        .row
+            border-radius: 15px
+            background-color: #f6f8fb
+
+            h2
+                padding-top: 25px
+
+    .goods
+        margin-bottom: 20px
+
+    .other-info
+        margin-bottom: 20px
+
+    .send-form
+        border-radius: 25px
+        background-color: #5c9eff
+        color: white
+        border: none
+
+    .form-group
+        margin-top: auto
+
+    .checkbox-wrapper
+        display: flex
+        align-items: center
+        margin-bottom: 0
+        cursor: pointer
+
+        input
+            display: none
+
+        .fake
+            display: inline-block
+            width: 35px
+            height: 35px
+            border: 1px solid #f0f3f8
+            border-radius: 5px
+            position: relative
+
+            &::before
+                content: ''
+                position: absolute
+                display: block
+                width: 16px
+                height: 28px
+                border-style: solid
+                border-color: #5b9dff
+                border-width: 0 2px 2px 0
+                bottom: 5px
+                left: 8px
+                transform: rotate(43deg)
+                opacity: 0
+
+        .text
+            font-size: 12px
+            color: black
+            line-height: 1.2
+            margin-left: 14px
+
+        input:checked + .fake::before
+            opacity: 1
+
+    .price
+        .checkbox-wrapper
+            display: flex
+            align-items: center
+            margin-bottom: 0
+            cursor: pointer
+
+            input
+                display: none
+
+            .fake
+                display: inline-block
+                width: 15px
+                height: 15px
+                border: 1px solid #f0f3f8
+                border-radius: 5px
+                position: relative
+
+                &::before
+                    content: ''
+                    position: absolute
+                    display: block
+                    width: 10px
+                    height: 14px
+                    border-style: solid
+                    border-color: #5b9dff
+                    border-width: 0 2px 2px 0
+                    bottom: 5px
+                    left: 0
+                    transform: rotate(43deg)
+                    opacity: 0
+
+            .text
+                font-size: 12px
+                color: black
+                line-height: 1.2
+                margin-left: 14px
+
+            input:checked + .fake::before
+                opacity: 1
+    .form-card
+        p
+            span
+                color: #cacaca
+
