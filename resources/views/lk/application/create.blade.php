@@ -591,25 +591,12 @@
                                             </span>
                                 @enderror
                             </div>
-                            <div class="form-group col-xl-1">
-                                <label for="stand">&nbsp;</label>
-                                <div class="col-xl-1">
-                                    <input id="stand" class="form-control"
-                                           @if(!old('stand'))  @endif name="stand"
-                                           type="text"
-                                           value="{{ old('stand') }}">
-                                </div>
-                                @error('stand')
-                                <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $message }}</strong>
-                                            </span>
-                                @enderror
-                            </div>
-                            <div class="form-group-2 mt-4 pt-2 ml-2">
-                                <label for="stand">
-                                    Простой транспорта
-                                </label>
-                            </div>
+
+                            <label class="checkbox-wrapper">
+                                <input type="checkbox">
+                                <span class="fake"></span>
+                                <span class="text">Простой транспорта</span>
+                            </label>
 
                         </div>
                         <div class="form-group">
