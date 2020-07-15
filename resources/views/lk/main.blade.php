@@ -206,7 +206,7 @@
                     <div tabindex="1" class="list-group-item list-group-item-action">Только новые</div>
                     <div tabindex="1" class="list-group-item list-group-item-action">Отвеченные</div>
                     <div tabindex="1" class="list-group-item list-group-item-action">В работе</div>
-                    <div tabindex="1" class="list-group-item list-group-item-action">Архив</div>
+                    <div tabindex="1" class="list-group-item list-group-item-action" style="border-radius: 30px">Архив</div>
                 </div>
             </div>
             <div class="stats">
