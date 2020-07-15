@@ -379,7 +379,6 @@ h2
         background-color: #3d537c
         padding: 15px
         padding-left: 0px
-        width: 305px
     .logo-header
         padding-left: 15px
 
@@ -757,6 +756,15 @@ h2
         .list-group-item:focus, .active
             &.lk-link::before
                 background-image: url("/img/document.png")
+            &.lk-link::after
+                content: ''
+                width: 7px
+                height: 11px
+                background-image: url("/img/arrow-right.png")
+                background-size: cover
+                display: inline-block
+                vertical-align: middle
+                margin-left: 85px
 
         .myapp-link::before
             content: ''
@@ -772,6 +780,15 @@ h2
         .list-group-item:focus, .active
             &.myapp-link::before
                 background-image: url("/img/list2.png")
+            &.myapp-link::after
+                content: ''
+                width: 7px
+                height: 11px
+                background-image: url("/img/arrow-right.png")
+                background-size: cover
+                display: inline-block
+                vertical-align: middle
+                margin-left: 79px
 
         .createapp-link::before
             content: ''
@@ -787,6 +804,15 @@ h2
         .list-group-item:focus, .active
             &.createapp-link::before
                 background-image: url("/img/pen2.png")
+            &.createapp-link::after
+                content: ''
+                width: 7px
+                height: 11px
+                background-image: url("/img/arrow-right.png")
+                background-size: cover
+                display: inline-block
+                vertical-align: middle
+                margin-left: 57px
 
         .list-group-item:nth-child(4)::before
             content: ''
@@ -881,7 +907,6 @@ h2
 
     .lk-user-col
         position: fixed
-        width: 305px
         height: 100vh
     .lk-user-col-exit
         position: absolute
@@ -895,7 +920,7 @@ h2
             text-decoration: none
             color: inherit
 
-    @media(max-width: 1815px)
+    @media(max-width: 1856px)
         .lk-user-col
             position: fixed
             width: 16.666667%
@@ -1193,6 +1218,8 @@ h2
     .lk-logo
         padding-left: 21px
         padding-top: 23px
+        width: 100%
+        max-width: 221px
     .user-avatar
         margin-top: 47px
     .rating-output
@@ -1259,6 +1286,7 @@ h2
     .inputs
         background-color: white
         padding-right: 0
+        max-height: 78px
     .filter-form
         .filter-select3,.filter-select2
             margin-right: 0
@@ -1274,7 +1302,7 @@ h2
             margin-left: 32px
             padding-top: 17px
         .filter1-submit
-            margin-left: 60px
+            margin-left: 40px
     .search
         right: 53px
     .search-box
@@ -1299,8 +1327,13 @@ h2
     #map
         border-radius: 30px
     .filter
+        border-bottom-right-radius: 30px
+        border-bottom-left-radius: 30px
         .list-group-item
             font-size: 16px
+            max-height: 57px
+        .list-group-item:nth-child(1)
+            padding-top: 15px
         .list-group-item:nth-child(2)
             padding-top: 9px
         .list-group-item:nth-child(3)
@@ -1351,11 +1384,17 @@ h2
     .select2
         margin-left: 22px
         width: 280px!important
+    .filter-select1,.filter-select2,.filter-select3
+        border-radius: 0!important
+        padding-left: 0px!important
+        padding-top: 10px!important
+        margin-left: 20px!important
+        margin-top: 12px!important
     .select2-selection
         margin-top: 12px
     .select2-container--default
         .select2-selection--single
-            border-radius: 0
+            border-radius: 0!important
             padding-left: 0px
             padding-top: 10px
             margin-left: 20px
@@ -1368,7 +1407,26 @@ h2
     .user-col-name
         font-size: 18px
         padding-top: 13px
-        padding-left: 5px
+        padding-left: 0px
     .text-blue
         color: #66a4ff!important
         text-decoration: underline
+    .header-user
+        margin-right: -1px
+    .search-box
+        margin-left: 0!important
+    .search
+        right: 0
+    .search-box::after
+        content: ""
+        width: 40px
+        height: 78px
+        background: #3d537c
+        position: absolute
+        right: -1px
+    .table
+        .rating-output
+            margin-top: 5px
+            .full-star,.empty-star
+                width: 11px
+                height: 10px

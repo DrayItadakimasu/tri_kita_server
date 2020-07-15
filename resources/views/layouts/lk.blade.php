@@ -27,10 +27,10 @@
                             <img class="lk-logo" src="/img/lk-logo.png"  alt="logo">
                         </a>
                     </div>
-                    <div class="col-8 ml-auto p-0">
+                    <div class="col-8 filter-row p-0 ml-auto">
                         <form class="filter-form">
-                            <div class="row">
-                                <div class="inputs col-10">
+                            <div class="row m-0">
+                                <div class="inputs">
                                     <select id="loadselect" name="load" class="filter-select1">
 
                                         <option
@@ -59,7 +59,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-2 ml-auto search-box p-0">
+                                <div class="search-box">
                                     <button class="search d-flex"></button>
                                 </div>
                             </div>
@@ -169,21 +169,25 @@
         padding: 30px;
     }
 
-    .table {
+    table {
         font-size: 12px;
     }
 
-    .table td {
+    table td {
         vertical-align: middle !important;
     }
 
-    .table a {
+    table a {
         color: #4d4d4d !important;
     }
 
     tbody {
         display: block;
         overflow-y: auto;
+    }
+
+    table th{
+        border-top: none;
     }
 
     thead, tbody tr {
@@ -201,6 +205,12 @@
     }
     tbody tr:nth-child(even){
         background-color: white;
+    }
+    tr{
+        height: 100px;
+    }
+    thead tr{
+        height: 60px;
     }
     .thead-fixed{
         height: 60px;

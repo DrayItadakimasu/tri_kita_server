@@ -22,7 +22,7 @@
                     Развернуть карту
                 </button>
                 <div class="table-container">
-                    <table class="table text-center fixtable">
+                    <table class="table table-borderless text-center fixtable">
                         <thead class="thead-fixed">
                         <tr>
                             <th scope="col"></th>
@@ -149,7 +149,7 @@
                                                 fill="#fff"></circle>
                                         <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954"
                                                 fill="transparent"
-                                                stroke="#d2d3d4" stroke-width="4"></circle>
+                                                stroke="#f0f3f8" stroke-width="4"></circle>
                                         <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954"
                                                 fill="transparent"
                                                 stroke="#196de7" stroke-width="4"
@@ -171,7 +171,7 @@
                                                 fill="#fff"></circle>
                                         <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954"
                                                 fill="transparent"
-                                                stroke="#d2d3d4" stroke-width="4"></circle>
+                                                stroke="#f0f3f8" stroke-width="4"></circle>
                                         <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954"
                                                 fill="transparent"
                                                 stroke="#72af5a" stroke-width="4"
@@ -195,7 +195,7 @@
 
     <div class="col-2 right-col">
         <div class="right-fixed">
-            <div class="filter">
+            <div class="filter pb-4">
                 <p>
                     <img src="/img/menu.png" alt="">
                     Фильтрация по типам заявки</p>
@@ -206,7 +206,7 @@
                     <div tabindex="1" class="list-group-item list-group-item-action">Только новые</div>
                     <div tabindex="1" class="list-group-item list-group-item-action">Отвеченные</div>
                     <div tabindex="1" class="list-group-item list-group-item-action">В работе</div>
-                    <div tabindex="1" class="list-group-item list-group-item-action" style="border-radius: 30px">Архив</div>
+                    <div tabindex="1" class="list-group-item list-group-item-action">Архив</div>
                 </div>
             </div>
             <div class="stats">
@@ -235,7 +235,7 @@
                                 <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954"
                                         fill="#fff"></circle>
                                 <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent"
-                                        stroke="#d2d3d4" stroke-width="4"></circle>
+                                        stroke="#f0f3f8" stroke-width="4"></circle>
                                 <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954"
                                         fill="transparent"
                                         stroke="#196de7" stroke-width="4"
@@ -254,7 +254,7 @@
                                 <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954"
                                         fill="#fff"></circle>
                                 <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent"
-                                        stroke="#d2d3d4" stroke-width="4"></circle>
+                                        stroke="#f0f3f8" stroke-width="4"></circle>
                                 <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954"
                                         fill="transparent"
                                         stroke="#72af5a" stroke-width="4"
