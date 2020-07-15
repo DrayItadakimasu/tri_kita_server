@@ -24,13 +24,13 @@
                 <div class="row">
                     <div class="col-2 lk-user-col logo-header">
                         <a class="" href="/">
-                            <img src="/img/owner-logo.png" width="100%" alt="logo">
+                            <img class="lk-logo" src="/img/lk-logo.png"  alt="logo">
                         </a>
                     </div>
                     <div class="col-8 ml-auto p-0">
                         <form class="filter-form">
                             <div class="row">
-                                <div class="inputs">
+                                <div class="inputs col-10">
                                     <select id="loadselect" name="load" class="filter-select1">
 
                                         <option
@@ -59,7 +59,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-1 ml-auto search-box">
+                                <div class="col-2 ml-auto search-box p-0">
                                     <button class="search d-flex"></button>
                                 </div>
                             </div>
@@ -121,7 +121,7 @@
                     <div class="star-cont">
                         <div class="rating-output"
                              data-rating="{{ isset($application->client->rating) ? $application->client->rating : '0'  }}">
-                            <div class="rating-star full-star"></div>
+                            <div  class="rating-star full-star"></div>
                             <div class="rating-star full-star"></div>
                             <div class="rating-star full-star"></div>
                             <div class="rating-star full-star"></div>

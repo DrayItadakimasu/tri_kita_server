@@ -50,14 +50,14 @@
 
             <form id="create_application" action="{{ $action }}" method="{{ $method }}" class="row loading">
                 @csrf
-                <div class="col-xl-7">
+                <div class="col-xl-7 pr-0">
                     <div class="form-card goods">
-                        <p>
+                        <p class="goods-header">
                             <img src="/img/1.png" alt="">
-                            <span class="ml-2">Груз</span>
+                            <span class="">Груз</span>
                         </p>
                         <div class="form-row">
-                            <div class="col-xl-4 form-group mt-0">
+                            <div class="col-xl-4 form-group my-0 culture-col">
                                 <label for="culture">
                                     Культура
                                 </label>
@@ -80,10 +80,10 @@
 
 
 
-                            <div class="col-xl-4 form-group mt-0">
+                            <div class="col-xl-4 form-group my-0">
 
                                 <label for="amount">
-                                    Объем перевозки, тонн
+                                    Общий объем перевозки, тонн
                                 </label>
                                 <input id="amount" class="load-redaction form-control" name="amount" type="number"
                                        min="0"
@@ -97,7 +97,7 @@
                                 @enderror
 
                             </div>
-                            <div class="col-xl-4 form-group mt-0">
+                            <div class="col-xl-4 form-group my-0 cost-col">
 
                                 <label for="cost">
                                     Цена перевозки, руб/кг
@@ -130,10 +130,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-card">
-                        <p>
+                    <div class="form-card load-unload">
+                        <p class="load-unload-p">
                             <img src="/img/2.png" alt="">
-                            <span class="ml-2">Погрузка и разгрузка</span>
+                            <span class="load-unload_header">Погрузка и разгрузка</span>
                         </p>
                         <div class="form-row">
                             <div class="col-xl-4 mt-auto">
@@ -161,7 +161,7 @@
                                 <div class="form-group">
 
                                     <label for="load-data-end">
-                                        Дата закрытия получения заявок
+                                        Дата закрытия заявки
                                     </label>
                                     <input id="load-data-end" class="load-redaction form-control" name="date_end"
                                            type="date"
@@ -183,7 +183,7 @@
                                 <div class="form-group">
 
                                     <label for="load-type">
-                                        Способ погрузки
+                                        Тип погрузчика
                                     </label>
                                     <select id="load-type" class="load-redaction form-control" name="loading_id"
                                             type="text"
@@ -227,7 +227,7 @@
                                 <div class="form-group">
 
                                     <label for="load-width">
-                                        Длина весов на погрузке, м
+                                        Длина весов , м
                                     </label>
                                     <input id="load-width" class="load-redaction form-control" name="max_width"
                                            type="number"
@@ -266,7 +266,7 @@
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <h2>
-                                            Загрузка
+                                            Погрузка
                                         </h2>
                                         <div class="form-group">
                                             <label for="load-region">
@@ -289,7 +289,7 @@
                                             @enderror
                                         </div>
                                     </div>
-                                    <div class="col-xl-12 form-row">
+                                    <div class="col-xl-12 form-row m-0">
                                         <div class="form-group col-xl-5">
                                             <div class="">
                                                 <label for="load_address">
@@ -418,7 +418,7 @@
                                             @enderror
                                         </div>
                                     </div>
-                                    <div class="col-xl-12 form-row">
+                                    <div class="col-xl-12 form-row m-0">
                                         <div class="form-group col-xl-5">
                                             <div class="">
                                                 <label for="unload_address">
@@ -523,11 +523,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-5">
+                <div class="col-xl-5 pl-5">
                     <div class="form-card other-info">
-                        <p>
+                        <p class="other-info-header">
                             <img src="/img/3.png" alt="">
-                            <span class="ml-2">Дополнительные условия</span>
+                            <span class="ml-3">Дополнительные условия</span>
                         </p>
                         <div class="form-row">
                             <div class="form-group col-xl-6">
@@ -634,10 +634,10 @@
                         </label>
 
                     </div>
-                    <div class="form-card">
-                        <p>
+                    <div class="form-card manager">
+                        <p class="manager-header">
                             <img src="/img/4.png" alt="">
-                            <span class="ml-2">Контакты менеджера</span>
+                            <span class="ml-3">Контакты менеджера</span>
                         </p>
                         <div class="form-group">
                             <label for="name-manager">
