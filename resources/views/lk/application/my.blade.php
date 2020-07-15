@@ -25,7 +25,7 @@
                 <div class="table-container">
 
                     <div class="table-container">
-                        <table class="table text-center">
+                        <table class="table table-borderless text-center">
                             <thead class="thead-fixed">
                             <tr>
                                 <th scope="col"></th>
