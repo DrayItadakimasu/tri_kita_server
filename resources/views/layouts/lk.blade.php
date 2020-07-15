@@ -31,19 +31,19 @@
                         <form class="filter-form">
                             <div class="row m-0">
                                 <div class="inputs">
-                                    <select id="loadselect" name="load" class="filter-select1">
+                                    <select id="loadselect" name="load" class="filter-select1 @if(($_SERVER["REQUEST_URI"] != '/lk') and ($_SERVER["REQUEST_URI"] != '/lk/myapplications')) filter-disable @endif">
 
                                         <option
                                             value="{{$applicationFilter['load']}}"> {{$applicationFilter['load'] ?  $applicationFilter['load'] : 'Место погрузки'}} </option>
 
                                     </select>
 
-                                    <select id="unloadselect" class="filter-select2" name="unload">
+                                    <select id="unloadselect" class="filter-select2 @if(($_SERVER["REQUEST_URI"] != '/lk') and ($_SERVER["REQUEST_URI"] != '/lk/myapplications')) filter-disable @endif" name="unload">
                                         <option
                                             value="{{$applicationFilter['unload']}}">{{$applicationFilter['unload'] ?  $applicationFilter['unload'] : 'Место выгрузки'}}</option>
                                     </select>
 
-                                    <select class="filter-select3" name='culture'>
+                                    <select class="filter-select3 @if(($_SERVER["REQUEST_URI"] != '/lk') and ($_SERVER["REQUEST_URI"] != '/lk/myapplications')) filter-disable @endif" name='culture'>
                                         <option value=""> Культура</option>
                                         @foreach ($cultures as $culture)
                                             <option
