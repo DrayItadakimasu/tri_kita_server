@@ -26,16 +26,16 @@
 
                     <div class="table-container">
                         <table class="table text-center">
-                            <thead>
+                            <thead class="thead-fixed">
                             <tr>
-                                <th scope="col">Создано</th>
+                                <th scope="col"></th>
                                 <th scope="col">Дата окончания</th>
                                 <th scope="col">Погрузка</th>
                                 <th scope="col">Выгрузка</th>
                                 <th scope="col">Культура</th>
                                 <th scope="col">Объем, тонн</th>
-                                <th scope="col">Расстояние, км</th>
-                                <th scope="col">Цена, руб/кг</th>
+                                <th scope="col">Расстояние</th>
+                                <th scope="col">Цена</th>
                                 <th scope="col">Отклики</th>
                                 <th scope="col"></th>
                             </tr>
@@ -44,8 +44,23 @@
                             <!--1-->
                             @foreach ($applications as $application)
                                 <tr onclick="window.location.href = '{{ route('show.application',$application->id) }}'">
-                                    <td data-label="Создано"><span
-                                            class="white-date"> {{ $application->created_at->format('H:i d.m.Y') }} </span>
+                                    <td>
+
+                                        <span
+                                            class="white-date"> {{ $application->created_at->format('H:i d.m.Y ') }} </span><br>
+                                        @if($application->answer->count()) <a title="Ответов"
+                                                                              href="@if($application->user_id == auth::user()->id){{ route('listing.answer', $application->id)}}@else#@endif"
+                                                                              class="white-date"><img
+                                                src="/assets/img/user-white.png"
+                                                alt=""> {{ $application->answer->count() }}</a> @endif <a href="#"
+                                                                                                          class="white-date"
+                                                                                                          title="Просмотров"><img
+                                                src="/assets/img/view.png" width="12px"
+                                                alt=""> {{ $application->views }}
+                                        </a>
+                                        <div class="indentation">
+                                            <a href="#"><img src="" alt=""></a>
+                                        </div>
                                     </td>
                                     <td data-label="Дата окончания"
                                         class="custom-width-date">{{ $application->date_end->format('d.m.Y') }}
@@ -62,10 +77,10 @@
                                     <td data-label="Объем, тонн" class="custom-width-weight">
                                         <a href="#">{{ $application->amount }}</a>
                                     </td>
-                                    <td data-label="Расстояние, км" class="custom-width-distance"><a
+                                    <td data-label="Расстояние" class="custom-width-distance"><a
                                             href="{{ route('show.application',$application->id) }}">{{ $application->distance }}</a>
                                     </td>
-                                    <td data-label="Цена, руб/кг" class="custom-width-sale"><a
+                                    <td data-label="Цена" class="custom-width-sale"><a
                                             href="{{ route('show.application',$application->id) }}">{{ $application->cost }}</a>
                                     </td>
                                     <td class="custom-width-user">
@@ -75,8 +90,7 @@
                                                 src="/assets/img/user-black.png"
                                                 alt=""> {{ $application->answer->count() }}</a> @endif <a href="#"
                                                                                                           class="text-blue"
-                                                                                                          title="Просмотров"><img
-                                                src="/assets/img/view.png" alt=""> {{ $application->views }}</a>
+                                                                                                          title="Просмотров">{{ $application->views }}</a>
                                     </td>
                                     <td class="custom-width-doit">
                                         <div class="row">

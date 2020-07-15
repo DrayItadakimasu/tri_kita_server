@@ -22,7 +22,7 @@
                     Развернуть карту
                 </button>
                 <div class="table-container">
-                    <table class="table text-center fixtable table-striped">
+                    <table class="table text-center fixtable">
                         <thead class="thead-fixed">
                         <tr>
                             <th scope="col"></th>
@@ -31,8 +31,8 @@
                             <th scope="col">Выгрузка</th>
                             <th scope="col">Культура</th>
                             <th scope="col">Объем, тонн</th>
-                            <th scope="col">Расстояние, км</th>
-                            <th scope="col">Цена, руб/кг</th>
+                            <th scope="col">Расстояние</th>
+                            <th scope="col">Цена</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -40,9 +40,7 @@
 
                         @foreach ($applications as $application)
 
-                            <tr onclick="window.location.href = '
-                            {{--                                    {{ route('show.application',$application->id) }}--}}
-                                '"
+                            <tr onclick="window.location.href = '{{ route('show.application',$application->id) }}'"
                                 class=" @isset($application->answers->status) @if($application->answers->status == 1) bg-green-tr @elseif ($application->answers->status == 2) bg-red-tr  @endif @endisset ">
                                 <td data-label="">
 
@@ -221,47 +219,52 @@
                 $ownersPr = $owners * 100 / $all;
                 $all_owPr = 100 - $ownersPr;
                 ?>
-                <p>
+                <p class="stats-header">
                     <img src="/img/menu.png" alt="">
                     Статистика платформы</p>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4 count-all-users">
                         <span>1335</span>
                     </div>
-                    <div class="col-8">
+                    <div class="col-8 count-all-users-text">
                         всего пользователей на платформе
                     </div>
-                    <div class="col-6">
-                        <svg width="90px" height="90px" viewBox="0 0 42 42" class="donut">
-                            <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954"
-                                    fill="#fff"></circle>
-                            <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent"
-                                    stroke="#d2d3d4" stroke-width="4"></circle>
-                            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954"
-                                    fill="transparent"
-                                    stroke="#196de7" stroke-width="4"
-                                    stroke-dasharray="{{$driversPr}} {{$all_drPr}}"
-                                    stroke-dashoffset="25"></circle>
-                        </svg>
+                    <div class="row drivers">
+                        <div class="col-6">
+                            <svg width="105px" height="105px" viewBox="0 0 42 42" class="donut">
+                                <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954"
+                                        fill="#fff"></circle>
+                                <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent"
+                                        stroke="#d2d3d4" stroke-width="4"></circle>
+                                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954"
+                                        fill="transparent"
+                                        stroke="#196de7" stroke-width="4"
+                                        stroke-dasharray="{{$driversPr}} {{$all_drPr}}"
+                                        stroke-dashoffset="25"></circle>
+                            </svg>
+                        </div>
+                        <div class="col-6 col-text">
+                            <span class="drivers">1100</span>
+                            Водителей
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <span class="drivers">1100</span> Водителей
-                    </div>
-                    <div class="col-6">
-                        <svg width="90px" height="90px" viewBox="0 0 42 42" class="donut">
-                            <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954"
-                                    fill="#fff"></circle>
-                            <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent"
-                                    stroke="#d2d3d4" stroke-width="4"></circle>
-                            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954"
-                                    fill="transparent"
-                                    stroke="#72af5a" stroke-width="4"
-                                    stroke-dasharray="{{$ownersPr}} {{$all_owPr}}"
-                                    stroke-dashoffset="25"></circle>
-                        </svg>
-                    </div>
-                    <div class="col-6">
-                        <span class="owners">235</span> Заказчиков
+                    <div class="row owners">
+                        <div class="col-6">
+                            <svg width="105px" height="105px" viewBox="0 0 42 42" class="donut">
+                                <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954"
+                                        fill="#fff"></circle>
+                                <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent"
+                                        stroke="#d2d3d4" stroke-width="4"></circle>
+                                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954"
+                                        fill="transparent"
+                                        stroke="#72af5a" stroke-width="4"
+                                        stroke-dasharray="{{$ownersPr}} {{$all_owPr}}"
+                                        stroke-dashoffset="25"></circle>
+                            </svg>
+                        </div>
+                        <div class="col-6 col-text">
+                            <span class="owners">235</span> Заказчиков
+                        </div>
                     </div>
                 </div>
 

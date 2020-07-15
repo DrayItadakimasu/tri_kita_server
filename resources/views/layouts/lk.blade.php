@@ -117,7 +117,7 @@
                     <div class="user-avatar">
                         <a href=""></a>
                     </div>
-                    <p class="text-white text-center">ИП Краюшкин Денис Сергеевич</p>
+                    <p class="text-white text-center user-col-name">ИП Краюшкин Денис Сергеевич</p>
                     <div class="star-cont">
                         <div class="rating-output"
                              data-rating="{{ isset($application->client->rating) ? $application->client->rating : '0'  }}">
@@ -196,6 +196,15 @@
         width: calc(100% - 1em)
     }
 
+    tbody tr{
+        background-color: #f9fafc;
+    }
+    tbody tr:nth-child(even){
+        background-color: white;
+    }
+    .thead-fixed{
+        height: 60px;
+    }
 </style>
 
 <!-- Добавляем файлы стилей CSS для библиотеки -->
