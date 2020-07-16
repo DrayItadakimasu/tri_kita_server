@@ -13,7 +13,7 @@
 
 @yield('content')
 
-
+@if($_SERVER["REQUEST_URI"] != '/actual')
 <div class="container">
     <div class="row feedback">
         <div class="col-12 col-md-4 mb-5 mb-md-0">
@@ -76,7 +76,7 @@
         </div>
     </div>
 </div>
-
+@endif
 <div class="contacts">
     <div class="container">
         <div class="row">

@@ -202,4 +202,6 @@ Route::group(['middleware' => 'auth'], function () {
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/actual', 'LandingController@actual')->name('actual');
+
 

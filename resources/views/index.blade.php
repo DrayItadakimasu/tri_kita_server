@@ -44,7 +44,7 @@
                                        placeholder="Ваше имя">
                                 <input class="m-2 border-top-0 border-left-0 border-right-0 border-bottom" type="text"
                                        placeholder="Телефон">
-                                <button class="button-form "></button>
+                                <button class="button-form"></button>
                             </div>
                             <small class="">*Нажимая кнопку «Отправить» Вы соглашаетесь с<br>
                                 обработкой <a href="">персональных данных</a></small>
