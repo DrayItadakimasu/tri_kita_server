@@ -20,12 +20,14 @@
 <div class="lk">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-2 lk-user-col logo-header">
+            <div class="col-12 p-0">
+                <div class="row m-0">
+                    <div class="col-2 logo-header p-0 lk-col-container">
+                        <div class="lk-user-col">
                         <a class="" href="/">
                             <img class="lk-logo" src="/img/lk-logo.png"  alt="logo">
                         </a>
+                        </div>
                     </div>
                     <div class="col-8 filter-row p-0 ml-auto">
                         <form class="filter-form">
@@ -65,7 +67,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="col-2 p-0 header-user">
+                    <div class="col p-0 header-user">
                         <div class="user-menu d-flex">
                             <div class="user-name text-center">
                                     <span>
@@ -112,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-2 p-0">
+            <div class="col-2 p-0 lk-col-container">
                 <div class="lk-user-col">
                     <div class="user-avatar">
                         <a href=""></a>
