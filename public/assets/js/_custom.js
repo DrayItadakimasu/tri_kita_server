@@ -1018,10 +1018,33 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
     });
+    function ChangeType(str) {
+        let _str = str.replace(/[^.+\d]/g, '');
+        let num = Number(_str);
+        return num;
+    }
 
+    function changeToFullWidth(target, offsetFrom) {
+        let container = document.querySelector(offsetFrom);
+        let _target = document.querySelector(target);
+        if (_target) {
+            let tmp1 = getComputedStyle(container).marginRight;
+            let tmp2 = getComputedStyle(_target).width;
+            let tmp3 = getComputedStyle(container).paddingRight;
+            let _width = ChangeType(tmp1) + ChangeType(tmp2) + (ChangeType(tmp3) * 2 + 1);
 
-})
-;
+            _target.style.width = _width + 'px';
+        } else {
+            return false;
+        }
+
+    }
+    if (window.innerWidth > 767) {
+        changeToFullWidth('.left-image-child', '.container');
+        changeToFullWidth('.bg-gray-child', '.container');
+    }
+
+});
 
 
 

@@ -44,9 +44,8 @@
             <h2>
                 Нам доверяют
             </h2>
-            <div class="partners">
+            <div class="partners bg-gray">
                 <div class="row m-0">
-
                     <div class="col-3">
                         <img src="/img/partner2.png" alt="">
                     </div>

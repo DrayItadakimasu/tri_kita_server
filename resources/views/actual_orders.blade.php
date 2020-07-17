@@ -28,8 +28,8 @@
                             </li>
                         </ul>
                         <a href="#" class=" header-link header-link-right">Регистрация</a>
-                        <button class="d-none d-lg-block user-login align-middle"></button>
-                        <a class="d-block d-lg-none header-link align-middle">Вход</a>
+                        <a href="/login"><button class="d-none d-lg-block user-login align-middle"></button></a>
+                        <a href="/login" class="d-block d-lg-none header-link align-middle">Вход</a>
                     </div>
                 </nav>
                 <h2 class="header-text">

@@ -92,9 +92,9 @@ Route::group(['middleware' => 'auth'], function () {
     //Route::get('/lk', 'LkController@index')->middleware('mobile.app')->middleware('lk.access:admin,driver,customer')->name('lk');
 
     // Профиль
-    Route::get('/lk/profile/', 'lk\UserProfileController@toProfile')->middleware('lk.access:admin,driver,customer')->name('to.profile');
-    Route::get('/lk/profile/{user_id}', 'lk\UserProfileController@showProfile')->middleware('lk.access:admin,driver,customer')->name('profile');
-    Route::get('/lk/profile/{user_id}/edit', 'lk\UserProfileController@showEditFormProfile')->middleware('lk.access:self,admin,noverify')->name('edit.profile.form');
+    Route::get('/lk/profile/', 'lk\UserProfileController@toProfile')->name('to.profile');
+    Route::get('/lk/profile/{user_id}', 'lk\UserProfileController@showProfile')->name('profile');
+    Route::get('/lk/profile/{user_id}/edit', 'lk\UserProfileController@showEditFormProfile')->name('edit.profile.form');
     Route::post('/lk/profile/{user_id}/edit', 'lk\UserProfileController@editProfile')->middleware('lk.access:self,admin,noverify')->name('edit.user.profile');
     Route::post('/lk/profile/{user_id}/edit/password', 'lk\UserProfileController@editPassword')->middleware('lk.access:self,admin')->name('edit.user.password');
     Route::post('/lk/profile/update/{user_id}', 'lk\UserProfileController@updateNotificationSettings')->middleware('lk.access:self,admin,noverify')->name('notifications.settings');

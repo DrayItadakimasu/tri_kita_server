@@ -24,33 +24,47 @@
                 <div class="row m-0">
                     <div class="col-2 logo-header p-0 lk-col-container">
                         <div class="lk-user-col">
-                        <a class="" href="/">
-                            <img class="lk-logo" src="/img/lk-logo.png"  alt="logo">
-                        </a>
+                            <a class="" href="/">
+                                <img class="lk-logo" src="/img/lk-logo.png" alt="logo">
+                            </a>
                         </div>
                     </div>
                     <div class="col-8 filter-row p-0 ml-auto">
                         <form class="filter-form">
                             <div class="row m-0">
                                 <div class="inputs">
-                                    <select id="loadselect" name="load" class="filter-select1 @if(($_SERVER["REQUEST_URI"] != '/lk') and ($_SERVER["REQUEST_URI"] != '/lk/myapplications')) filter-disable @endif">
+                                    <select id="loadselect" name="load"
+                                            class="filter-select1 @if(($_SERVER["REQUEST_URI"] != '/lk') and ($_SERVER["REQUEST_URI"] != '/lk/myapplications')) filter-disable @endif">
 
                                         <option
+                                            value="Место погрузки"
+                                            @if(isset($applicationFilter))
                                             value="{{$applicationFilter['load']}}"> {{$applicationFilter['load'] ?  $applicationFilter['load'] : 'Место погрузки'}} </option>
-
+                                        @endif
                                     </select>
 
-                                    <select id="unloadselect" class="filter-select2 @if(($_SERVER["REQUEST_URI"] != '/lk') and ($_SERVER["REQUEST_URI"] != '/lk/myapplications')) filter-disable @endif" name="unload">
+                                    <select id="unloadselect"
+                                            class="filter-select2 @if(($_SERVER["REQUEST_URI"] != '/lk') and ($_SERVER["REQUEST_URI"] != '/lk/myapplications')) filter-disable @endif"
+                                            name="unload">
                                         <option
+                                            @if(isset($applicationFilter))
+                                            value="Место выгрузки"
                                             value="{{$applicationFilter['unload']}}">{{$applicationFilter['unload'] ?  $applicationFilter['unload'] : 'Место выгрузки'}}</option>
+                                        @endif
                                     </select>
 
-                                    <select class="filter-select3 @if(($_SERVER["REQUEST_URI"] != '/lk') and ($_SERVER["REQUEST_URI"] != '/lk/myapplications')) filter-disable @endif" name='culture'>
+                                    <select
+                                        class="filter-select3 @if(($_SERVER["REQUEST_URI"] != '/lk') and ($_SERVER["REQUEST_URI"] != '/lk/myapplications')) filter-disable @endif"
+                                        name='culture'>
                                         <option value=""> Культура</option>
-                                        @foreach ($cultures as $culture)
-                                            <option
-                                                {{$applicationFilter['culture']==$culture->id ? 'selected': ''}} value="{{ $culture->id }}">{{ $culture->name }}</option>
-                                        @endforeach
+                                        @if(isset($applicationFilter))
+
+                                            @foreach ($cultures as $culture)
+                                                <option
+
+                                                    {{$applicationFilter['culture']==$culture->id ? 'selected': ''}} value="{{ $culture->id }}">{{ $culture->name }}</option>
+                                            @endforeach
+                                        @endif
                                     </select>
 
                                     <div class="filter-panel-buttons">
@@ -123,7 +137,7 @@
                     <div class="star-cont">
                         <div class="rating-output"
                              data-rating="{{ isset($application->client->rating) ? $application->client->rating : '0'  }}">
-                            <div  class="rating-star full-star"></div>
+                            <div class="rating-star full-star"></div>
                             <div class="rating-star full-star"></div>
                             <div class="rating-star full-star"></div>
                             <div class="rating-star full-star"></div>
@@ -151,7 +165,12 @@
                         </a>
                         <div tabindex="1" class="list-group-item list-group-item-action">Форум</div>
                         <div tabindex="1" class="list-group-item list-group-item-action">Профиль</div>
-                        <div tabindex="1" class="list-group-item list-group-item-action">Настройки</div>
+                        <a class="m-0" href="/lk/profile/{{\Illuminate\Support\Facades\Auth::user()->id}}/edit">
+                            <div tabindex="1"
+                                 class="setting-link list-group-item list-group-item-action @if($_SERVER["REQUEST_URI"] == '/lk/profile/'. \Illuminate\Support\Facades\Auth::user()->id.'/edit') active @endif">
+                                Настройки
+                            </div>
+                        </a>
                         <div tabindex="1" class="lk-user-col-exit list-group-item list-group-item-action">Выйти</div>
                     </div>
                 </div>
@@ -188,7 +207,7 @@
         overflow-y: auto;
     }
 
-    table th{
+    table th {
         border-top: none;
     }
 
@@ -202,19 +221,23 @@
         width: calc(100% - 1em)
     }
 
-    tbody tr{
+    tbody tr {
         background-color: #f9fafc;
     }
-    tbody tr:nth-child(even){
+
+    tbody tr:nth-child(even) {
         background-color: white;
     }
-    tr{
+
+    tr {
         height: 100px;
     }
-    thead tr{
+
+    thead tr {
         height: 60px;
     }
-    .thead-fixed{
+
+    .thead-fixed {
         height: 60px;
     }
 </style>

@@ -74,13 +74,14 @@ class UserProfileController extends Controller
 
         $canRewiew = false;
         if (!$applications->isEmpty() or !$answers->isEmpty()) $canRewiew = true;
-
+        $subscriptionLoad = SubscriptionLoad::where('user_id', $user_id->id)->get();
+        $subscriptionUnload = SubscriptionUnload::where('user_id', $user_id->id)->get();
 
         return view('lk.profile.show', compact('canRewiew'), [
             'profile' => $profile,
             'reviews' => $reviews,
             'cars' => $cars,
-            'drivers' => $drivers
+            'drivers' => $drivers,
         ]);
 
 
@@ -242,18 +243,23 @@ class UserProfileController extends Controller
         $action = route('edit.user.profile', $user_id);
         $action_password = route('edit.user.password', $user_id);
         $method = 'post';
-
+        $subscriptionLoad = SubscriptionLoad::where('user_id', $profile->id)->get();
+        $subscriptionUnload = SubscriptionUnload::where('user_id', $profile->id)->get();
 
         return view('lk.profile.edit',
             compact('action', 'action_password', 'method', 'group'),
-            ['profile' => $profile]);
+            ['profile' => $profile,
+                'subscriptionLoad' => $subscriptionLoad,
+                'subscriptionUnload' => $subscriptionUnload,
+                ]);
 
 
     }
 
     public function editProfile(ProfileUpdateRequest $request, $user_id)
     {
-
+        $subscriptionLoad = SubscriptionLoad::where('user_id', $user_id->id)->get();
+        $subscriptionUnload = SubscriptionUnload::where('user_id', $user_id->id)->get();
         $profile = User::find($user_id);
         $group = User::GetGroup($user_id);
 
@@ -311,7 +317,7 @@ class UserProfileController extends Controller
         }
 
         return redirect()->back()->withErrors($request->validator)->withInput();
-        return view('lk.profile.edit', compact('action', 'action_password', 'method', 'group'), ['profile' => $profile]);
+        return view('lk.profile.edit', compact('action', 'action_password', 'method', 'group','subscriptionLoad','subscriptionUnload'), ['profile' => $profile]);
 
     }
 
