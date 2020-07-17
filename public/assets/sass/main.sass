@@ -375,7 +375,7 @@ h2
 
 .lk
     background-color: #f0f3f8
-
+    min-height: 1000px
     .lk-user-col
         background-color: #3d537c
         padding: 15px
@@ -564,7 +564,7 @@ h2
             top: -15px
             right: -40px
 
-        .list-group-item-action:focus
+        .list-group-item-action:focus, .active
             background-image: url("/img/bg-ul 14.png")
             outline: none
             border: none
@@ -678,7 +678,7 @@ h2
             margin-left: 37px
             margin-right: 30px
 
-        .list-group-item:focus
+        .list-group-item:focus, .active
             &:nth-child(1)::before
                 background-image: url("/img/document (1).png")
 
@@ -693,7 +693,7 @@ h2
             margin-left: 37px
             margin-right: 30px
 
-        .list-group-item:focus
+        .list-group-item:focus, .active
             &:nth-child(2)::before
                 background-image: url("/img/time2.png")
 
@@ -708,7 +708,7 @@ h2
             margin-left: 36px
             margin-right: 27px
 
-        .list-group-item:focus
+        .list-group-item:focus, .active
             &:nth-child(3)::before
                 background-image: url("/img/chat2.png")
 
@@ -723,7 +723,7 @@ h2
             margin-left: 37px
             margin-right: 30px
 
-        .list-group-item:focus
+        .list-group-item:focus, .active
             &:nth-child(4)::before
                 background-image: url("/img/portfolio2.png")
 
@@ -738,7 +738,7 @@ h2
             margin-left: 37px
             margin-right: 30px
 
-        .list-group-item:focus
+        .list-group-item:focus, .active
             &:nth-child(5)::before
                 background-image: url("/img/files-and-folders2.png")
 
@@ -815,7 +815,7 @@ h2
                 vertical-align: middle
                 margin-left: 57px
 
-        .list-group-item:nth-child(4)::before
+        .forum-link::before
             content: ''
             width: 25px
             height: 25px
@@ -823,11 +823,11 @@ h2
             background-size: cover
             display: inline-block
             vertical-align: middle
-            margin-left: 38px
+            margin-left: 35px
             margin-right: 15px
 
-        .list-group-item:focus
-            &:nth-child(4)::before
+        .list-group-item:focus, .active
+            &.forum-link::before
                 background-image: url("/img/question2.png")
 
         .list-group-item:nth-child(5)::before
@@ -853,14 +853,14 @@ h2
             background-size: cover
             display: inline-block
             vertical-align: middle
-            margin-left: 38px
-            margin-right: 15px
+            margin-left: 35px
+            margin-right: 13px
 
         .list-group-item:focus
             &.setting-link::before
                 background-image: url("/img/wrench2.png")
 
-        .list-group-item:nth-child(7)::before
+        .lk-user-col-exit::before
             content: ''
             width: 23px
             height: 19px
@@ -872,7 +872,7 @@ h2
             margin-right: 15px
 
         .list-group-item:focus
-            &:nth-child(7)::before
+            &.lk-user-col-exit::before
                 background-image: url("/img/sign-out-option.png")
 
     .filter-inline
@@ -1741,3 +1741,65 @@ h2
         margin-bottom: 17px
     .search:hover
         background-image: url("/img/search-white.png")
+    .edit-submit
+        border: none
+        border-radius: 25px
+        background-color: #5c9eff
+        width: 221px
+        height: 52px
+    .message-card
+        background-color: white
+        border-radius: 25px
+        img
+            border: 1px solid #f0f3f8
+            border-bottom: none
+            border-top-left-radius: 25px
+            border-top-right-radius: 25px
+        p,small
+            color: #626262
+        small
+            margin-bottom: 30px
+    .list-news::before
+        content: ''
+        width: 24px
+        height: 28px
+        background-image: url("/img/document (1)2.png")!important
+        background-size: cover
+        display: inline-block
+        vertical-align: middle
+        margin-left: 37px
+        margin-right: 30px
+
+    .list-group-item:focus, .active
+        &.list-news::before
+            background-image: url("/img/document (1).png")!important
+
+    .list-offer::before
+        content: ''
+        width: 27px
+        height: 27px
+        background-image: url("/img/time.png")!important
+        background-size: cover
+        display: inline-block
+        vertical-align: middle
+        margin-left: 37px
+        margin-right: 30px
+
+    .list-group-item:focus, .active
+        &.list-offer::before
+            background-image: url("/img/time2.png")!important
+
+    .list-help::before
+        content: ''
+        width: 30px
+        height: 30px
+        background-image: url("/img/chat.png")!important
+        background-size: cover
+        display: inline-block
+        vertical-align: middle
+        margin-left: 36px
+        margin-right: 27px
+
+    .list-group-item:focus, .active
+        &.list-help::before
+            background-image: url("/img/chat2.png")!important

@@ -331,6 +331,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="row justify-content-end p-0">
+                    <button class="edit-submit text-center text-white mr-3">
+                        Сохранить все
+                    </button>
+                </div>
             </div>
         </form>
     </div>

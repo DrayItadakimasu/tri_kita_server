@@ -70,7 +70,7 @@ class SectionController extends Controller
     {
         $topics = $section->topics->SortByDesc('id');
 
-        return view('forum.section', [
+        return view('forum.index', [
             'topics' => $topics,
             'section' => $section,
         ]);

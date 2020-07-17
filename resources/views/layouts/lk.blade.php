@@ -36,21 +36,27 @@
                                     <select id="loadselect" name="load"
                                             class="filter-select1 @if(($_SERVER["REQUEST_URI"] != '/lk') and ($_SERVER["REQUEST_URI"] != '/lk/myapplications')) filter-disable @endif">
 
-                                        <option
-                                            value="Место погрузки"
-                                            @if(isset($applicationFilter))
-                                            value="{{$applicationFilter['load']}}"> {{$applicationFilter['load'] ?  $applicationFilter['load'] : 'Место погрузки'}} </option>
+                                        @if(isset($applicationFilter))
+                                            <option
+                                                value="Место погрузки"
+                                                value="{{$applicationFilter['load']}}"> {{$applicationFilter['load'] ?  $applicationFilter['load'] : 'Место погрузки'}}
+                                            </option>
+                                        @else
+                                            <option value="">Место погрузки</option>
                                         @endif
                                     </select>
 
                                     <select id="unloadselect"
                                             class="filter-select2 @if(($_SERVER["REQUEST_URI"] != '/lk') and ($_SERVER["REQUEST_URI"] != '/lk/myapplications')) filter-disable @endif"
                                             name="unload">
-                                        <option
-                                            @if(isset($applicationFilter))
-                                            value="Место выгрузки"
-                                            value="{{$applicationFilter['unload']}}">{{$applicationFilter['unload'] ?  $applicationFilter['unload'] : 'Место выгрузки'}}</option>
+                                        @if(isset($applicationFilter))
+                                            <option
+                                                value="Место выгрузки"
+                                                value="{{$applicationFilter['unload']}}">{{$applicationFilter['unload'] ?  $applicationFilter['unload'] : 'Место выгрузки'}}</option>
+                                        @else
+                                            <option value=""> Место выгрузки</option>
                                         @endif
+
                                     </select>
 
                                     <select
@@ -163,8 +169,13 @@
                                 Подать заявку
                             </div>
                         </a>
-                        <div tabindex="1" class="list-group-item list-group-item-action">Форум</div>
-                        <div tabindex="1" class="list-group-item list-group-item-action">Профиль</div>
+                        <a class="m-0" href="/forum/1">
+                            <div tabindex="1"
+                                 class="forum-link list-group-item list-group-item-action @if($_SERVER["REQUEST_URI"] == '/forum/') active @endif">
+                                Форум
+                            </div>
+                        </a>
+                        {{--                        <div tabindex="1" class="list-group-item list-group-item-action">Профиль</div>--}}
                         <a class="m-0" href="/lk/profile/{{\Illuminate\Support\Facades\Auth::user()->id}}/edit">
                             <div tabindex="1"
                                  class="setting-link list-group-item list-group-item-action @if($_SERVER["REQUEST_URI"] == '/lk/profile/'. \Illuminate\Support\Facades\Auth::user()->id.'/edit') active @endif">
