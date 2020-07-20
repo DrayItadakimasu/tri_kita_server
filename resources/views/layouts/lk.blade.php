@@ -171,7 +171,7 @@
                         </a>
                         <a class="m-0" href="/forum/1">
                             <div tabindex="1"
-                                 class="forum-link list-group-item list-group-item-action @if($_SERVER["REQUEST_URI"] == '/forum/') active @endif">
+                                 class="forum-link list-group-item list-group-item-action @if(($_SERVER["REQUEST_URI"] == '/forum/1') or ($_SERVER["REQUEST_URI"] == '/forum/2') or ($_SERVER["REQUEST_URI"] == '/forum/3')) active @endif">
                                 Форум
                             </div>
                         </a>
