@@ -4,15 +4,13 @@
     <div class="drivers owners">
 
         <div class="header">
-            <div class="container">
-                <nav class="navbar navbar-light navbar-expand-lg p-1">
+            <div class="container p-0">
+                <nav class="navbar navbar-light navbar-expand-lg">
                     <a href="/">
                         <img src="/img/owner-logo.png" width="247px" alt="logo">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarTogglerDemo02"
-                            aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                            aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
@@ -25,11 +23,11 @@
                                 <a class="header-link" href="/drivers">Для перевозчиков</a>
                             </li>
                             <li class="nav-item">
-                                <a class="text-white ml-lg-2 header-link header-link-right" href="#">Контакты </a>
+                                <a class="text-white ml-lg-2 header-link header-link-contacts" href="#contacts">Контакты </a>
                             </li>
                         </ul>
-                        <a href="#" class=" header-link header-link-right">Регистрация</a>
-                        <a href="/login"><button class="d-none d-lg-block user-login align-middle"></button></a>
+                        <a href="#" class="text-white header-link register-header">Регистрация</a>
+                        <a href="/login"> <button class="d-none d-lg-block user-login align-middle"></button></a>
                         <a href="/login" class="d-block d-lg-none header-link align-middle">Вход</a>
                     </div>
                 </nav>
@@ -38,7 +36,7 @@
             <section class="promo">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-lg-6 text-white p-1">
+                        <div class="col-12 col-lg-6 text-white p-0">
                             <h2 class="text-white">
                                 Три кита - теперь все в одном приложени</h2>
                             <p>
@@ -61,7 +59,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4">
-                        <h1 class="mt-5 text-white">
+                        <h1 class="text-white">
                             Личный кабинет поможет Вам:
                         </h1>
                     </div>
@@ -191,7 +189,7 @@
 
         <div class="line-logo">
             <div class="container">
-                <div class="row p-4 p-lg-5">
+                <div class="row ">
                     <div class="col-12 col-md-8">
                         <h2 class="text-white">
                             Авторизуйтесь и начните пользоваться всеми преимуществами уже сегодня
@@ -206,3 +204,4 @@
             </div>
         </div>
 @endsection
+

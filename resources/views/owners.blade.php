@@ -4,15 +4,13 @@
     <div class="owners">
 
         <div class="header">
-            <div class="container">
-                <nav class="navbar navbar-light navbar-expand-lg p-1">
+            <div class="container p-0">
+                <nav class="navbar navbar-light navbar-expand-lg">
                     <a href="/">
                         <img src="/img/owner-logo.png" width="247px" alt="logo">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarTogglerDemo02"
-                            aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                            aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
@@ -25,11 +23,11 @@
                                 <a class="header-link" href="/drivers">Для перевозчиков</a>
                             </li>
                             <li class="nav-item">
-                                <a class="text-white ml-lg-2 header-link header-link-right" href="#">Контакты </a>
+                                <a class="text-white ml-lg-2 header-link header-link-contacts" href="#contacts">Контакты </a>
                             </li>
                         </ul>
-                        <a href="#" class=" header-link header-link-right">Регистрация</a>
-                        <a href="/login"><button class="d-none d-lg-block user-login align-middle"></button></a>
+                        <a href="#" class="text-white header-link register-header">Регистрация</a>
+                        <a href="/login"> <button class="d-none d-lg-block user-login align-middle"></button></a>
                         <a href="/login" class="d-block d-lg-none header-link align-middle">Вход</a>
                     </div>
                 </nav>
@@ -38,11 +36,12 @@
             <section class="promo">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-lg-6 text-white p-1">
+                        <div class="col-12 col-lg-6 text-white p-0">
                             <h2 class="text-white">
-                                Цифровая платформа грузоперевозок
+                                Цифровая платформа
+                                грузоперевозок
                             </h2>
-                            <ul>
+                            <ul class="promo-ul">
                                 <li>Легкое взаимодействие грузовладельцев с перевозчиками</li>
                                 <li>Функциональный личный кабинет</li>
                             </ul>
@@ -60,7 +59,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4">
-                        <h1 class="mt-5 text-white">
+                        <h1 class=" text-white">
                             Личный кабинет поможет Вам:
                         </h1>
                     </div>
@@ -126,7 +125,7 @@
                         Получите исключительные возможности с цифровой платформой “ Три кита ”
                     </h1>
                     <div class="col-12 col-md-6">
-                        <img src="/img/line.png" alt="">
+                        <img class="line" src="/img/line.png" alt="">
                         <div class="list-group" id="list-tab" role="tablist">
                             <a class="list-group-item list-group-item-action active" id="list-home-list"
                                data-toggle="list"
@@ -159,7 +158,7 @@
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="list-home" role="tabpanel"
                                  aria-labelledby="list-home-list">
-                                <img width="100%" height="auto" src="/img/devices.png" alt="">
+                                <img width="100%" height="auto" src="/img/devices.png" style="max-width: 496px" alt="">
 
                             </div>
                             <div class="tab-pane fade" id="list-profile" role="tabpanel"
@@ -186,8 +185,8 @@
 
         <div class="line-logo">
             <div class="container">
-                <div class="row p-4 p-lg-5">
-                    <div class="col-12 col-md-8">
+                <div class="row">
+                    <div class="col-12 col-md-8 p-0">
                         <h2 class="text-white">
                             Переложите свою рутинную работу на наши автоматизированные процессы
                         </h2>

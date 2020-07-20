@@ -28,7 +28,9 @@
                             </li>
                         </ul>
                         <a href="#" class=" header-link header-link-right">Регистрация</a>
-                        <a href="/login"><button class="d-none d-lg-block user-login align-middle"></button></a>
+                        <a href="/login">
+                            <button class="d-none d-lg-block user-login align-middle"></button>
+                        </a>
                         <a href="/login" class="d-block d-lg-none header-link align-middle">Вход</a>
                     </div>
                 </nav>
@@ -84,60 +86,65 @@
         </section>
         <section class="orders">
             <div class="container">
-                        <div class="table-container">
-                            <table class="table table-borderless text-center ">
-                                <thead class="thead-fixed">
-                                <tr>
-                                    <th scope="col">Погрузка</th>
-                                    <th scope="col">Выгрузка</th>
-                                    <th scope="col">Культура</th>
-                                    <th scope="col">Цена</th>
-                                    <th scope="col">Телефон менеджера</th>
-                                    <th scope="col"></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <!--1-->
-                                @foreach ($applications as $application)
-                                    <tr onclick="window.location.href = '{{ route('show.application',$application->id) }}'">
-                                        <td data-label="Погрузка" class="custom-width-load"><a
-                                                href="{{ route('show.application',$application->id) }}">{{ $application->FullLoadPlace }}</a>
-                                        </td>
-                                        <td data-label="Выгрузка" class="custom-width-unload"><a
-                                                href="{{ route('show.application',$application->id) }}">{{ $application->FullUnloadPlace }}</a>
-                                        </td>
-                                        <td data-label="Культура" class="custom-width-culture"><a
-                                                href="{{ route('show.application',$application->id) }}">{{ $application->culture->name }}</a>
-                                        </td>
-                                        <td data-label="Цена" class="custom-width-sale"><a
-                                                href="{{ route('show.application',$application->id) }}">{{ $application->cost }}</a>
-                                        </td>
-                                        <td data-label="Телефон менеджера" class="custom-width-distance"><a
-                                                href="{{ route('show.application',$application->id) }}">{{ $application->manager_number ?? '+7(000)000-00-00' }}</a>
-                                        </td>
-                                        <td class="custom-width-doit">
-                                            <div class="row justify-content-center">
-                                                <a href="#">
-                                                    <button class="button-form">
-                                                    </button>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                @endforeach
-                                <!--1-->
+                <div class="row">
+                    <div class="col-12">
+                <div class="table-container">
+                    <table class="table table-borderless text-center ">
+                        <thead class="thead-fixed">
+                        <tr>
+                            <th scope="col">Погрузка</th>
+                            <th scope="col">Выгрузка</th>
+                            <th scope="col">Культура</th>
+                            <th scope="col">Цена</th>
+                            <th scope="col">Телефон менеджера</th>
+                            <th scope="col"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!--1-->
+                        @foreach ($applications as $application)
+                            <tr onclick="window.location.href = '{{ route('show.application',$application->id) }}'">
+                                <td data-label="Погрузка" class="custom-width-load"><a
+                                        href="{{ route('show.application',$application->id) }}">{{ $application->FullLoadPlace }}</a>
+                                </td>
+                                <td data-label="Выгрузка" class="custom-width-unload"><a
+                                        href="{{ route('show.application',$application->id) }}">{{ $application->FullUnloadPlace }}</a>
+                                </td>
+                                <td data-label="Культура" class="custom-width-culture"><a
+                                        href="{{ route('show.application',$application->id) }}">{{ $application->culture->name }}</a>
+                                </td>
+                                <td data-label="Цена" class="custom-width-sale"><a
+                                        href="{{ route('show.application',$application->id) }}">{{ $application->cost }}</a>
+                                </td>
+                                <td data-label="Телефон менеджера" class="custom-width-distance"><a
+                                        href="{{ route('show.application',$application->id) }}">{{ $application->manager_number ?? '+7(000)000-00-00' }}</a>
+                                </td>
+                                <td class="custom-width-doit">
+                                    <div class="row justify-content-center">
+                                        <a href="#">
+                                            <button class="button-form">
+                                            </button>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        @endforeach
+                        <!--1-->
 
-                                </tbody>
+                        </tbody>
 
-                            </table>
-                        </div>
-                    </div>
+                    </table>
+                </div>
+            </div>
+            </div>
+            </div>
         </section>
     </div>
     <style>
 
         table {
             font-size: 12px;
+            border-radius: 25px;
         }
 
         table td {

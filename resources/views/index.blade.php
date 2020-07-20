@@ -18,7 +18,7 @@
                             <a class="header-link" href="/owners">Для грузовладельцев</a>
                         </li>
                         <li class="nav-item">
-                            <a class="header-link" href="">Для перевозчиков</a>
+                            <a class="header-link" href="/drivers">Для перевозчиков</a>
                         </li>
                         <li class="nav-item">
                             <a class="text-white ml-lg-2 header-link" href="#contacts">Контакты </a>
