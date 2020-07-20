@@ -1042,6 +1042,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth > 767) {
         changeToFullWidth('.left-image-child', '.container');
         changeToFullWidth('.bg-gray-child', '.container');
+        changeToFullWidth('.bg-header-child', '.container');
     }
 
 });

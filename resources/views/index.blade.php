@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="header">
-        <div class="container">
-            <nav class="navbar navbar-light navbar-expand-lg p-1">
+        <div class="container p-0">
+            <nav class="navbar navbar-light navbar-expand-lg">
                 <a href="/">
                     <img src="/img/logo.png" width="247px" alt="logo">
                 </a>
@@ -21,10 +21,10 @@
                             <a class="header-link" href="">Для перевозчиков</a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-white ml-lg-2 header-link" href="#">Контакты </a>
+                            <a class="text-white ml-lg-2 header-link" href="#contacts">Контакты </a>
                         </li>
                     </ul>
-                    <a href="#" class="text-white header-link">Регистрация</a>
+                    <a href="#" class="text-white header-link register-header">Регистрация</a>
                     <a href="/login"> <button class="d-none d-lg-block user-login align-middle"></button></a>
                     <a href="/login" class="d-block d-lg-none header-link align-middle">Вход</a>
                 </div>
@@ -34,12 +34,12 @@
         <div class="promo">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6 bg-white">
+                    <div class="col-12 col-md-6 bg-white p-0">
                         <h2>Перевозка наливных
                             и сельскохозяйственных грузов в больших объемах</h2>
                         <p>Прозрачный и надежный сервис обслуживания грузоперевозок</p>
                         <form action="">
-                            <div class=" pl-2">
+                            <div class="d-flex">
                                 <input class=" m-2 border-top-0 border-left-0 border-right-0 border-bottom" type="text"
                                        placeholder="Ваше имя">
                                 <input class="m-2 border-top-0 border-left-0 border-right-0 border-bottom" type="text"
@@ -50,7 +50,8 @@
                                 обработкой <a href="">персональных данных</a></small>
                         </form>
                     </div>
-                    <div class="col-6 d-none d-md-block devices">
+                    <div class="col-6 d-none d-md-block devices bg-header">
+                        <div class="bg-header-child "></div>
                     </div>
                 </div>
             </div>
@@ -103,9 +104,9 @@
     <div class="reasons">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 p-0">
                     <h2>Надежный партнер для профессионалов</h2>
-                    <p>
+                    <p style="color: #8f8f8f">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                         labore
                         et
@@ -134,7 +135,7 @@
     <div class="advantages">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 p-0">
                     <h1>
                         Почему выбирают нас
                     </h1>
@@ -163,7 +164,7 @@
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="list-home" role="tabpanel"
                              aria-labelledby="list-home-list">
-                            <img width="100%" height="auto" src="/img/453_2961044.png" alt="">
+                            <img width="100%" style="max-width: 392px; margin-bottom: 37px" height="auto" src="/img/453_2961044.png" alt="">
                             <h2>
                                 Lorem ipsum dolor sit amet, consectetur
                             </h2>
@@ -220,7 +221,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-7 text-white text-right p-5 pr-4">
+                <div class="col-12 col-md-7 text-white text-right ">
                     <h2>
                         Удобный, автоматизированный сервис организации грузоперевозок
                     </h2>

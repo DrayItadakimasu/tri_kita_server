@@ -16,8 +16,8 @@
 @if($_SERVER["REQUEST_URI"] != '/actual')
 <div class="container">
     <div class="row feedback">
-        <div class="col-12 col-md-4 mb-5 mb-md-0">
-            <h2>У вас остались вопросы?</h2>
+        <div class="col-12 col-md-4 mb-5 mb-md-0 p-0">
+            <h2 class="feedback-header">У вас остались вопросы?</h2>
             <p>Оставьте контактные даные
                 и мы вам перезвоним!</p>
             <form action="">
@@ -40,34 +40,34 @@
                 </div>
             </form>
         </div>
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-8 p-0">
             <h2>
                 Нам доверяют
             </h2>
             <div class="partners bg-gray">
                 <div class="row m-0">
-                    <div class="col-3">
+                    <div class="col-3 partner1">
                         <img src="/img/partner2.png" alt="">
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 partner2">
                         <img src="/img/partner5.png" alt="">
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 partner3">
                         <img src="/img/partner6.png" alt="">
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 partner4">
                         <img src="/img/partner12.png" alt="">
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 partner5">
                         <img src="/img/partner1.png" alt="">
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 partner6">
                         <img src="/img/partner10.png" alt="">
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 partner7">
                         <img src="/img/partner4.png" alt="">
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 partner8">
                         <img src="/img/partner9.png" alt="">
                     </div>
                 </div>
@@ -77,6 +77,7 @@
 </div>
 @endif
 <div class="contacts">
+    <a id="contacts"></a>
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
@@ -107,7 +108,7 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="row">
-                            <div class="col-3 p-3 pt-4">
+                            <div class="col-3 p-3 pt-4 pl-4">
                                 <img src="/img/placeholder.png" alt="">
                             </div>
                             <div class="col-9 p-3">
@@ -117,10 +118,10 @@
                     </div>
                     <div class="col-6">
                         <div class="row">
-                            <div class="col-3 p-3 pt-4">
+                            <div class="col-3  pt-2">
                                 <img src="/img/avatar.png" alt="">
                             </div>
-                            <div class="col-9 p-3">
+                            <div class="col-9 ">
                                 Фамилия Имя
                                 +7(000)000-00-00
                             </div>
@@ -130,20 +131,20 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="row">
-                            <div class="col-3 p-3 pt-4">
+                            <div class="col-3 pl-4 pt-3">
                                 <img src="/img/mail.png" alt="">
                             </div>
-                            <div class="col-9 p-3">
+                            <div class="col-9 pt-3">
                                 info@gk-snd.ru
                             </div>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="row">
-                            <div class="col-3 p-3 pt-4">
+                            <div class="col-3  pt-2">
                                 <img src="/img/avatar.png" alt="">
                             </div>
-                            <div class="col-9 p-3">
+                            <div class="col-9 ">
                                 Фамилия Имя
                                 +7(000)000-00-00
                             </div>
@@ -158,7 +159,7 @@
     </div>
 </div>
 
-<div class="footer py-4">
+<div class="footer">
     <div class="container">
         <div class="row">
             <div class="footer-copy col-9">

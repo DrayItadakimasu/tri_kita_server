@@ -9,8 +9,10 @@ body
     background-image: url("/img/header-background.jpg")
     background-repeat: no-repeat
     background-position: top right
-    background-size: 50%
+    background-position-x: 53vw
     height: 596px
+    .container
+        padding-top: 28px
 
 h2
     font-size: 1.5em
@@ -42,8 +44,9 @@ h2
     background-image: url("/img/devices.png")
     background-repeat: no-repeat
     background-position: bottom left
-    top: 130px
+    top: 87px
     height: 385px
+    left: 80px
 
 .promo
     width: 100%
@@ -71,6 +74,7 @@ h2
     background-color: #6c96ef
     margin-bottom: 95px
     color: #ffffff
+    min-height: 197px
 
 .dropbtn
     padding-top: 15px
@@ -100,9 +104,10 @@ h2
     top: 137px
     left: 0
     background-image: url("/img/dropdown.png")
-    max-width: 373px
+    background-position: bottom
+    max-width: 380px
     width: 100%
-    height: 412px
+    height: 276px
     z-index: 1
 
     p
@@ -147,7 +152,7 @@ h2
 .reasons
     color: #3e537c
     font-size: 14px
-    margin-bottom: 118px
+    margin-bottom: 76px
 
     > .col-6 p
         color: #989898
@@ -160,7 +165,7 @@ h2
     color: #3e537c
 
 .advantages
-    margin-bottom: 100px
+    margin-bottom: 79px
 
     h2
         font-size: 18px
@@ -185,7 +190,13 @@ h2
     /*background-position: right;
     background-image: url("/img/logo-line-1.png")
     background-repeat: no-repeat
-    height: auto
+    height: 250px
+    h2
+        font-size: 30px
+    .col-md-7
+        padding-top: 65px
+        padding-left: 50px
+        padding-right: 68px
 
 @media(max-width: 1145px)
     .line-logo
@@ -196,13 +207,15 @@ h2
 
 .register-col
     border: #7c8aa6 1px solid
-    padding-top: 40px
-    padding-bottom: 40px
-    padding-left: 40px
-
+    padding-top: 35px
+    padding-bottom: 30px
+    padding-left: 20px
+    .col-8
+        padding-left: 0
     &:hover
         background-color: #485d86
-
+.register-col:nth-child(2)
+    padding-bottom: 40px
 .register-link
     font-size: 30px
     color: #89adf8
@@ -213,10 +226,11 @@ h2
     h2
         font-size: 16px
         color: #485d86
+        margin-bottom: 70px
 
 .images
     flex-wrap: wrap
-    margin-bottom: 75px
+    margin-bottom: 53px
 
 .feedback
     margin-bottom: 60px
@@ -225,6 +239,104 @@ h2
     background: linear-gradient(to right, #89adf8 50%, #ffffff 50%)
     color: #ffffff
 
+.navbar
+    padding: 0
+    padding-top: 25px
+    .nav-item:nth-child(1)
+        margin-left: 38px
+        margin-bottom: 10px
+    .nav-item:nth-child(2)
+        margin-left: 25px
+    .nav-item:nth-child(3)
+        margin-left: 37px
+    .register-header
+        margin-right: 28px
+        margin-bottom: 8px
+.user-login
+    border-radius: 25px
+.promo
+    h2
+        font-size: 40px!important
+        margin-top: 90px
+        line-height: 1
+        margin-bottom: 22px
+    p
+        margin-bottom: 45px
+.items
+    h2
+        font-size: 36px
+    .col-md-4:nth-child(1)
+        padding: 0
+        padding-top: 31px
+        padding-right: 70px
+    .dropbtn
+        padding-top: 25px
+        padding-left: 10px
+        p
+            margin-top: 18px
+            font-weight: bold
+    .col-md-4:nth-child(3)
+        padding-left: 22px
+        padding-top: 30px
+.reasons
+    .col-md-6
+        h2
+            font-size: 48px
+            margin-top: -18px
+        p
+            margin-top: 24px
+            color: #8f8f8f
+.advantages
+    h1
+        font-size: 48px
+    .list-group
+        margin-top: 22px
+        .list-group-item
+            //padding-top: 42px
+            font-weight: bold
+            img
+                margin-right: 37px
+.partners
+    .col-3:nth-child(1)
+        margin-bottom: 50px
+
+    .partner1
+        img
+            max-width: 118px
+    .partner2
+        img
+            max-width: 137px
+    .partner3
+        img
+            max-width: 142px
+    .partner4
+        img
+            max-width: 78px
+    .partner5
+        img
+            max-width: 137px
+    .partner6
+        img
+            max-width: 134px
+    .partner7
+        img
+            max-width: 139px
+    .partner8
+        img
+            max-width: 89px
+.feedback
+    .feedback-header
+        margin-bottom: 19px
+        font-weight: normal
+.contacts
+    .col-12:first-child
+        padding-top: 50px
+        padding-bottom: 58px
+        padding-right: 28px
+.footer
+    padding-top: 37px
+    img
+        margin-right: 47px
 @media (max-width: 768px)
     .contacts
         background: #89adf8
@@ -1803,3 +1915,4 @@ h2
     .list-group-item:focus, .active
         &.list-help::before
             background-image: url("/img/chat2.png")!important
+
