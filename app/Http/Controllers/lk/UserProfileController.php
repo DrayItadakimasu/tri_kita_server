@@ -228,9 +228,7 @@ class UserProfileController extends Controller
     //Удалить запись водителя
     public function deleteDriver($user_id, UserDriver $driver)
     {
-
         $driver->delete();
-
         return redirect()->back()->withInput();
     }
 
@@ -258,8 +256,9 @@ class UserProfileController extends Controller
 
     public function editProfile(ProfileUpdateRequest $request, $user_id)
     {
-        $subscriptionLoad = SubscriptionLoad::where('user_id', $user_id->id)->get();
-        $subscriptionUnload = SubscriptionUnload::where('user_id', $user_id->id)->get();
+
+        $subscriptionLoad = SubscriptionLoad::where('user_id', $user_id)->get();
+        $subscriptionUnload = SubscriptionUnload::where('user_id', $user_id)->get();
         $profile = User::find($user_id);
         $group = User::GetGroup($user_id);
 

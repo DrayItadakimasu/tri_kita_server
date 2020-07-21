@@ -107,10 +107,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::delete('/lk/profile/{user_id}/car/{car}/delete', 'lk\UserProfileController@deleteCar')->middleware('lk.access:self,admin')->name('user.car.delete');
     //Добавить Водителя
     Route::post('/lk/profile/{user_id}/new/driver', 'lk\UserProfileController@addNewDriver')->middleware('lk.access:self,admin')->middleware('phone.render')->name('user.driver.new');
-    //Удалить Машину
+    //Удалить Водителя
     Route::delete('/lk/profile/{user_id}/driver/{driver}/delete', 'lk\UserProfileController@deleteDriver')->middleware('lk.access:self,admin')->name('user.driver.delete');
 
-    Route::get('/lk/profile/{user_id}/getfile/{type}/{file_id}', 'privateFilesController@getFile')->middleware('lk.access:self,admin')->middleware('phone.render')->name('getfile');
+    Route::get('/lk/profile/{user_id}/getfile/{type}/{file_id}', 'privateFilesController@getFile')->middleware('lk.access:self,admin')->middleware('phone.render')->name('get.file');
     // обновить группу
     Route::post('/lk/profile/{user_id}/setgroup/', 'lk\UserProfileController@setUserGroup')->middleware('lk.access:self,admin')->middleware('register.security')->name('set.group');
 
@@ -202,6 +202,14 @@ Route::group(['middleware' => 'auth'], function () {
 Route::get('/', function () {
     return view('index');
 });
+//evfim start
+Route::get('/profile/docs/test', function (){
+   return view('lk.profile.docs');
+});
+Route::get('/admin/news/add', function (){
+    return view('admin.add_news_form');
+});
+//evfim end
 Route::get('/actual', 'LandingController@actual')->name('actual');
 
 
